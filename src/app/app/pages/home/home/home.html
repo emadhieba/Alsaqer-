@@ -1,0 +1,779 @@
+<!-- Hero Section -->
+<section
+  class="min-h-[90vh] flex items-center hero-bg relative overflow-hidden"
+>
+  <div class="absolute inset-0 opacity-20 pointer-events-none">
+    <div
+      class="w-[500px] h-[500px] bg-gradient-to-tr from-gold/40 via-gold-light/20 to-transparent rounded-full blur-3xl absolute -top-40 -left-40"
+    ></div>
+    <div
+      class="w-[400px] h-[400px] border border-gold/20 rounded-[3rem] absolute top-32 right-8 rotate-6"
+    ></div>
+    <!-- Animated speed lines -->
+    <div class="hero-speed-line"></div>
+    <div class="hero-speed-line"></div>
+    <div class="hero-speed-line"></div>
+    <!-- Road / highway overlay at bottom -->
+    <svg
+      class="absolute inset-x-0 bottom-0 h-32 w-full opacity-50"
+      viewBox="0 0 1440 320"
+      preserveAspectRatio="none"
+    >
+      <path
+        fill="#111111"
+        d="M0,288L160,261.3C320,235,640,181,960,176C1280,171,1600,213,1760,234.7L1920,256L1920,320L1760,320C1600,320,1280,320,960,320C640,320,320,320,160,320L0,320Z"
+      />
+      <path
+        fill="none"
+        stroke="#2a2a2a"
+        stroke-width="4"
+        d="M-40,260 Q400,230 840,240 T1720,250"
+        stroke-linecap="round"
+        stroke-dasharray="20 16"
+      />
+      <path
+        fill="none"
+        stroke="#C9A84C"
+        stroke-width="3"
+        d="M-40,252 Q400,222 840,232 T1720,242"
+        stroke-linecap="round"
+        stroke-dasharray="40 24"
+      />
+    </svg>
+  </div>
+
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid md:grid-cols-2 gap-10">
+    <div class="space-y-6" data-aos="fade-up">
+      <div
+        class="inline-flex items-center border border-gold/60 text-gold px-4 py-1 rounded-full text-xs font-semibold bg-black/40 backdrop-blur-sm"
+      >
+        الجهة المعتمدة لإصدار التربتك في مصر
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-relaxed text-white">
+        دخول سيارتك مصر..
+        <span class="text-gold block mt-2">بكل سهولة وأمان</span>
+      </h1>
+
+      <p class="text-gray-200 text-sm sm:text-base leading-relaxed max-w-xl">
+        نادي الصقر الإفريقي يوفر لك دفتر الإفراج المؤقت (التربتك) بإجراءات سريعة وموثوقة،
+        لتتمكن من إدخال سيارتك الأجنبية إلى مصر دون تعقيدات أو تأخير.
+      </p>
+
+      <div class="flex flex-wrap gap-3 mt-4">
+        <a
+          href="https://wa.me/201069822661"
+          target="_blank"
+          rel="noopener"
+          class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-gold text-dark font-bold text-sm shadow-lg hover:bg-gold-light hover:-translate-y-0.5 transition-all"
+        >
+          اطلب دفتر التربتك الآن
+        </a>
+        <a
+          href="#about-preview"
+          class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-gold text-gold font-semibold text-sm hover:bg-gold/10 transition-colors"
+        >
+          اعرف أكتر
+        </a>
+      </div>
+    </div>
+
+    <!-- Car + Floating Flags -->
+    <div class="flex items-center justify-center relative" data-aos="fade-left">
+
+      <!-- Floating country flags (real images) -->
+      <img src="https://flagcdn.com/w40/sa.png" alt="SA" class="flag-float absolute w-9 h-auto rounded shadow-lg" style="top:4%;left:5%;animation-delay:0s;animation-duration:3.4s"/>
+      <img src="https://flagcdn.com/w40/ae.png" alt="AE" class="flag-float absolute w-9 h-auto rounded shadow-lg" style="top:12%;right:3%;animation-delay:0.9s;animation-duration:3.8s"/>
+      <img src="https://flagcdn.com/w40/kw.png" alt="KW" class="flag-float absolute w-9 h-auto rounded shadow-lg" style="top:52%;left:0%;animation-delay:1.7s;animation-duration:4.1s"/>
+      <img src="https://flagcdn.com/w40/ly.png" alt="LY" class="flag-float absolute w-9 h-auto rounded shadow-lg" style="top:75%;left:8%;animation-delay:2.5s;animation-duration:3.6s"/>
+      <img src="https://flagcdn.com/w40/jo.png" alt="JO" class="flag-float absolute w-9 h-auto rounded shadow-lg" style="top:76%;right:6%;animation-delay:0.5s;animation-duration:3.9s"/>
+      <img src="https://flagcdn.com/w40/tn.png" alt="TN" class="flag-float absolute w-9 h-auto rounded shadow-lg" style="top:30%;right:0%;animation-delay:2.1s;animation-duration:4.3s"/>
+      <img src="https://flagcdn.com/w40/ma.png" alt="MA" class="flag-float absolute w-9 h-auto rounded shadow-lg" style="top:60%;right:12%;animation-delay:1.3s;animation-duration:3.5s"/>
+      <img src="https://flagcdn.com/w40/eg.png" alt="EG" class="flag-float absolute w-9 h-auto rounded shadow-lg" style="top:40%;left:14%;animation-delay:3s;animation-duration:3.7s"/>
+
+      <!-- Car SVG — Nissan Patrol Y62 inspired -->
+      <div
+        class="relative w-full max-w-2xl"
+        style="background: radial-gradient(ellipse, rgba(201,168,76,0.12) 0%, transparent 65%);"
+      >
+        <svg
+          viewBox="0 0 860 300"
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-full"
+          style="animation: floatCar 5s ease-in-out infinite; filter: drop-shadow(0 10px 44px rgba(201,168,76,0.3));"
+        >
+          <defs>
+            <!-- Dark navy body — Patrol Y62 deep blue-black -->
+            <linearGradient id="p_body" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%"   stop-color="#263048"/>
+              <stop offset="22%"  stop-color="#18223a"/>
+              <stop offset="58%"  stop-color="#0f1828"/>
+              <stop offset="100%" stop-color="#080c14"/>
+            </linearGradient>
+            <linearGradient id="p_spec" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%"   stop-color="#6888cc" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#6888cc" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="p_hood" x1="100%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%"   stop-color="#1e2c48"/>
+              <stop offset="60%"  stop-color="#121e36"/>
+              <stop offset="100%" stop-color="#080c18"/>
+            </linearGradient>
+            <linearGradient id="p_front" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%"   stop-color="#1c2840"/>
+              <stop offset="100%" stop-color="#080c18"/>
+            </linearGradient>
+            <linearGradient id="p_rear" x1="100%" y1="0%" x2="0%" y2="0%">
+              <stop offset="0%"   stop-color="#0c1428"/>
+              <stop offset="100%" stop-color="#1a2238"/>
+            </linearGradient>
+            <linearGradient id="p_glass" x1="100%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%"   stop-color="#0d1e38"/>
+              <stop offset="55%"  stop-color="#071528"/>
+              <stop offset="100%" stop-color="#040e1c"/>
+            </linearGradient>
+            <linearGradient id="p_gref" x1="100%" y1="0%" x2="20%" y2="100%">
+              <stop offset="0%"   stop-color="#C9A84C" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+            </linearGradient>
+            <radialGradient id="p_rim" cx="35%" cy="28%" r="72%">
+              <stop offset="0%"   stop-color="#3c3c3c"/>
+              <stop offset="45%"  stop-color="#1c1c1c"/>
+              <stop offset="100%" stop-color="#040404"/>
+            </radialGradient>
+            <radialGradient id="p_gnd" cx="50%" cy="5%" r="100%">
+              <stop offset="0%"   stop-color="#C9A84C" stop-opacity="0.26"/>
+              <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+            </radialGradient>
+            <!-- Beam goes LEFT (car faces left) — bright on right, fade left -->
+            <linearGradient id="p_beam" x1="100%" y1="0%" x2="0%" y2="0%">
+              <stop offset="0%"   stop-color="#C9A84C" stop-opacity="0.44"/>
+              <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="p_bounce" x1="0%" y1="100%" x2="0%" y2="0%">
+              <stop offset="0%"   stop-color="#C9A84C" stop-opacity="0.16"/>
+              <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Ground shadow -->
+          <ellipse cx="415" cy="256" rx="330" ry="12" fill="url(#p_gnd)"/>
+          <ellipse cx="415" cy="251" rx="300" ry="5"  fill="rgba(0,0,0,0.7)"/>
+
+          <!-- Speed lines — RIGHT side (rear trail of left-facing car) -->
+          <g class="svg-speed-lines-right">
+            <line x1="744" y1="148" x2="840" y2="148" stroke="#C9A84C" stroke-width="3"   stroke-linecap="round"/>
+            <line x1="752" y1="163" x2="848" y2="163" stroke="#C9A84C" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="740" y1="178" x2="836" y2="178" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="748" y1="133" x2="844" y2="133" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="736" y1="193" x2="832" y2="193" stroke="#C9A84C" stroke-width="1.1" stroke-linecap="round"/>
+          </g>
+
+          <!-- REAR WHEEL  cx=614 cy=237 r=47 (RIGHT side — rear of car) -->
+          <g>
+            <circle cx="614" cy="237" r="47" fill="#070707"/>
+            <circle cx="614" cy="237" r="40" fill="#0d0d0d"/>
+            <circle cx="614" cy="237" r="36" fill="#161616" stroke="#C9A84C" stroke-width="1.6" stroke-opacity="0.5"/>
+            <circle cx="614" cy="237" r="33" fill="url(#p_rim)"/>
+            <g class="wheel-spokes-rear">
+              <rect x="612" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9"/>
+              <rect x="612" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(36,614,237)"/>
+              <rect x="612" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(72,614,237)"/>
+              <rect x="612" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(108,614,237)"/>
+              <rect x="612" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(144,614,237)"/>
+              <rect x="612" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(180,614,237)"/>
+              <rect x="612" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(216,614,237)"/>
+              <rect x="612" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(252,614,237)"/>
+              <rect x="612" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(288,614,237)"/>
+              <rect x="612" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(324,614,237)"/>
+              <circle cx="614" cy="237" r="14" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.2"/>
+            </g>
+            <circle cx="614" cy="237" r="9"   fill="#C9A84C"/>
+            <circle cx="614" cy="237" r="5.5" fill="#111"/>
+            <circle cx="614" cy="237" r="2.5" fill="#C9A84C" opacity="0.7"/>
+          </g>
+
+          <!-- FRONT WHEEL  cx=218 cy=237 r=47 (LEFT side — front of car) -->
+          <g>
+            <circle cx="218" cy="237" r="47" fill="#070707"/>
+            <circle cx="218" cy="237" r="40" fill="#0d0d0d"/>
+            <circle cx="218" cy="237" r="36" fill="#161616" stroke="#C9A84C" stroke-width="1.6" stroke-opacity="0.5"/>
+            <circle cx="218" cy="237" r="33" fill="url(#p_rim)"/>
+            <g class="wheel-spokes-front">
+              <rect x="216" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9"/>
+              <rect x="216" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(36,218,237)"/>
+              <rect x="216" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(72,218,237)"/>
+              <rect x="216" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(108,218,237)"/>
+              <rect x="216" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(144,218,237)"/>
+              <rect x="216" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(180,218,237)"/>
+              <rect x="216" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(216,218,237)"/>
+              <rect x="216" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(252,218,237)"/>
+              <rect x="216" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(288,218,237)"/>
+              <rect x="216" y="204" width="3" height="22" rx="1.5" fill="#C9A84C" opacity="0.9" transform="rotate(324,218,237)"/>
+              <circle cx="218" cy="237" r="14" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.2"/>
+            </g>
+            <circle cx="218" cy="237" r="9"   fill="#C9A84C"/>
+            <circle cx="218" cy="237" r="5.5" fill="#111"/>
+            <circle cx="218" cy="237" r="2.5" fill="#C9A84C" opacity="0.7"/>
+          </g>
+
+          <!-- Modern Premium SUV — faces LEFT -->
+          <path d="M 70,242 L 70,50 L 92,50 L 238,100 L 284,40 L 308,38 L 622,38 L 648,50 L 656,94 L 658,155 L 656,210 L 646,242 Z"
+                fill="url(#p_body)"/>
+
+          <!-- Specular highlight along top edge -->
+          <path d="M 284,40 L 308,38 L 622,38 L 648,50 L 622,43 L 308,43 Z"
+                fill="url(#p_spec)" opacity="0.5"/>
+
+          <!-- Metallic sheen band -->
+          <rect x="70" y="158" width="588" height="8" fill="white" opacity="0.012"/>
+
+          <!-- Gold bounce reflection -->
+          <rect x="70" y="198" width="578" height="44" fill="url(#p_bounce)"/>
+
+          <!-- Rocker panel (side sill) -->
+          <rect x="108" y="205" width="541" height="12" rx="3" fill="#080808"/>
+          <rect x="118" y="205" width="528" height="2"  rx="1" fill="#C9A84C" opacity="0.38"/>
+
+          <!-- Running boards -->
+          <rect x="162" y="219" width="492" height="10" rx="3" fill="#111111"/>
+          <rect x="162" y="219" width="492" height="2"  rx="1" fill="#C9A84C" opacity="0.5"/>
+          <rect x="187" y="220" width="40"  height="6"  rx="2" fill="#1c1c1c"/>
+          <rect x="265" y="220" width="40"  height="6"  rx="2" fill="#1c1c1c"/>
+          <rect x="355" y="220" width="40"  height="6"  rx="2" fill="#1c1c1c"/>
+          <rect x="445" y="220" width="40"  height="6"  rx="2" fill="#1c1c1c"/>
+          <rect x="530" y="220" width="40"  height="6"  rx="2" fill="#1c1c1c"/>
+          <rect x="608" y="220" width="36"  height="6"  rx="2" fill="#1c1c1c"/>
+
+          <!-- Shoulder crease line -->
+          <path d="M 76,163 Q 390,155 655,158" fill="none" stroke="#C9A84C" stroke-width="0.9" opacity="0.28"/>
+
+          <!-- REAR FACE + taillights (RIGHT side) -->
+          <rect x="647" y="50" width="20" height="192" rx="2" fill="url(#p_rear)"/>
+          <rect x="647" y="62"  width="20" height="5" rx="2" fill="#C9A84C" opacity="0.95" class="taillight-glow"/>
+          <rect x="647" y="71"  width="20" height="5" rx="2" fill="#C9A84C" opacity="0.85" class="taillight-glow"/>
+          <rect x="647" y="80"  width="20" height="5" rx="2" fill="#C9A84C" opacity="0.72" class="taillight-glow"/>
+          <rect x="647" y="89"  width="20" height="5" rx="2" fill="#C9A84C" opacity="0.50" class="taillight-glow"/>
+          <rect x="647" y="192" width="23" height="2"  rx="1" fill="#C9A84C" opacity="0.6"/>
+
+          <!-- Rear bumper -->
+          <path d="M 656,210 L 670,214 L 670,242 L 658,242 Z" fill="#111"/>
+          <rect x="654" y="209" width="18" height="2.5" rx="1" fill="#C9A84C" opacity="0.85"/>
+          <rect x="658" y="216" width="10" height="8"   rx="2" fill="#1a1a1a"/>
+
+          <!-- Window waistline -->
+          <rect x="92" y="99" width="556" height="2"   rx="1" fill="#C9A84C" opacity="0.2"/>
+
+          <!-- A-pillar (windshield frame strip) -->
+          <path d="M 238,100 L 284,40 L 296,40 L 252,102 Z" fill="#181818"/>
+
+          <!-- Front door window (trapezoid) -->
+          <path d="M 252,102 L 296,40 L 430,40 L 430,102 Z" fill="url(#p_glass)"/>
+          <path d="M 260,44 L 257,96 L 312,44 Z" fill="url(#p_gref)"/>
+
+          <!-- B-pillar -->
+          <rect x="430" y="40" width="12" height="62" fill="#181818"/>
+
+          <!-- Rear door window -->
+          <path d="M 444,40 L 444,102 L 556,102 L 556,40 Z" fill="url(#p_glass)"/>
+          <path d="M 450,44 L 448,95 L 502,44 Z" fill="url(#p_gref)"/>
+
+          <!-- C-pillar -->
+          <rect x="556" y="40" width="10" height="62" fill="#181818"/>
+
+          <!-- Rear quarter window -->
+          <path d="M 568,40 L 568,102 L 618,102 L 618,40 Z" fill="url(#p_glass)"/>
+          <path d="M 574,44 L 572,94 L 604,44 Z" fill="url(#p_gref)"/>
+
+          <!-- D-pillar (thick rear post) -->
+          <rect x="618" y="40" width="29" height="62" fill="#0d0d0d"/>
+
+          <!-- Chrome window sill -->
+          <rect x="92" y="101" width="556" height="2.5" rx="1" fill="#C9A84C" opacity="0.55"/>
+
+          <!-- Drip rail -->
+          <rect x="238" y="40" width="410" height="2"   rx="1" fill="#C9A84C" opacity="0.2"/>
+
+          <!-- Roof rails -->
+          <rect x="256" y="30" width="376" height="8" rx="3" fill="#1a1a1a"/>
+          <rect x="258" y="31" width="372" height="5" rx="2" fill="#222"/>
+          <rect x="278" y="28" width="4" height="11" rx="1.5" fill="#C9A84C" opacity="0.85"/>
+          <rect x="374" y="28" width="4" height="11" rx="1.5" fill="#C9A84C" opacity="0.85"/>
+          <rect x="468" y="28" width="4" height="11" rx="1.5" fill="#C9A84C" opacity="0.85"/>
+          <rect x="560" y="28" width="4" height="11" rx="1.5" fill="#C9A84C" opacity="0.85"/>
+          <rect x="626" y="28" width="4" height="11" rx="1.5" fill="#C9A84C" opacity="0.85"/>
+
+          <!-- Hood surface overlay -->
+          <path d="M 92,50 L 238,100 L 238,104 L 92,54 Z"
+                fill="url(#p_hood)" opacity="0.68"/>
+
+          <!-- FRONT HEADLIGHTS (top of front face, LEFT side) -->
+          <path d="M 70,50 L 70,106 L 92,100 L 92,50 Z" fill="#040404"/>
+          <path d="M 72,54 Q 81,50 91,54" fill="none" stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round" class="headlight-glow" opacity="0.9"/>
+          <circle cx="81" cy="80" r="13" fill="#080808" stroke="#C9A84C" stroke-width="1.6" class="headlight-glow"/>
+          <circle cx="81" cy="80" r="5.5" fill="#C9A84C" opacity="0.72" class="headlight-glow"/>
+          <path d="M 72,100 Q 81,97 91,100" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" class="headlight-glow"/>
+
+          <!-- Headlight beam (extends LEFT) -->
+          <path d="M 71,52 L 0,22 L 0,62 L 71,106 Z" fill="url(#p_beam)"/>
+          <path d="M 71,102 L 2,80 L 2,95 L 71,108 Z" fill="url(#p_beam)" opacity="0.18"/>
+
+          <!-- Grille (below headlight housing) -->
+          <rect x="70" y="108" width="22" height="58" rx="2" fill="#040404"/>
+          <rect x="72" y="112" width="18" height="2.5" rx="1" fill="#C9A84C" opacity="0.82"/>
+          <rect x="72" y="118" width="18" height="2.5" rx="1" fill="#C9A84C" opacity="0.74"/>
+          <rect x="72" y="124" width="18" height="2.5" rx="1" fill="#C9A84C" opacity="0.65"/>
+          <rect x="72" y="130" width="18" height="2.5" rx="1" fill="#C9A84C" opacity="0.55"/>
+          <rect x="72" y="136" width="18" height="2.5" rx="1" fill="#C9A84C" opacity="0.44"/>
+          <rect x="72" y="142" width="18" height="2.5" rx="1" fill="#C9A84C" opacity="0.33"/>
+          <rect x="72" y="148" width="18" height="2.5" rx="1" fill="#C9A84C" opacity="0.22"/>
+          <rect x="72" y="154" width="18" height="2.5" rx="1" fill="#C9A84C" opacity="0.12"/>
+
+          <!-- Front bumper (protrudes LEFT) -->
+          <path d="M 66,210 L 54,214 L 54,242 L 70,242 Z" fill="#111"/>
+          <rect x="54" y="209" width="18" height="2.5" rx="1" fill="#C9A84C" opacity="0.85"/>
+          <rect x="56" y="216" width="12" height="8"   rx="2" fill="#1a1a1a"/>
+          <circle cx="62" cy="222" r="3" fill="#C9A84C" opacity="0.4" class="headlight-glow"/>
+
+          <!-- Side mirror (just ahead of A-pillar) -->
+          <path d="M 218,78 L 238,72 L 242,93 L 222,98 Z" fill="#141414"/>
+          <path d="M 220,80 L 236,75 L 240,89 L 226,93 Z" fill="url(#p_glass)"/>
+          <path d="M 222,81 L 234,77 L 236,83 L 226,85 Z" fill="url(#p_gref)"/>
+
+          <!-- Door handles -->
+          <rect x="350" y="172" width="32" height="8" rx="4" fill="#C9A84C" opacity="0.72"/>
+          <rect x="486" y="172" width="32" height="8" rx="4" fill="#C9A84C" opacity="0.72"/>
+
+          <!-- Door gap line (B-pillar extension) -->
+          <line x1="436" y1="102" x2="433" y2="207" stroke="#C9A84C" stroke-width="0.9" opacity="0.22"/>
+
+          <!-- FENDER ARCHES -->
+          <path d="M 158,215 Q 178,185 218,181 Q 258,181 276,215 L 268,215 Q 252,191 218,187 Q 184,187 166,215 Z" fill="#070707"/>
+          <path d="M 160,215 Q 180,183 218,179 Q 256,179 278,215" fill="none" stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round" opacity="0.65"/>
+          <path d="M 550,215 Q 570,185 614,181 Q 656,181 672,215 L 664,215 Q 648,191 614,187 Q 580,187 558,215 Z" fill="#070707"/>
+          <path d="M 552,215 Q 572,183 614,179 Q 654,179 674,215" fill="none" stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round" opacity="0.65"/>
+
+          <!-- Wheel ground glows -->
+          <ellipse cx="218" cy="254" rx="62" ry="8" fill="#C9A84C" opacity="0.1"/>
+          <ellipse cx="614" cy="254" rx="62" ry="8" fill="#C9A84C" opacity="0.1"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Bar -->
+<section class="bg-dark-card border-t border-gold/40">
+  <div
+    class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm"
+    data-aos="fade-up"
+  >
+    <div class="flex flex-col items-center justify-center text-center">
+      <lucide-icon
+        name="trophy"
+        [size]="40"
+        color="#C9A84C"
+        class="mb-1"
+      ></lucide-icon>
+      <div class="text-gold font-extrabold text-lg">+500</div>
+      <div class="text-gray-300 text-xs">عميل راضٍ</div>
+    </div>
+    <div class="flex flex-col items-center justify-center text-center">
+      <lucide-icon
+        name="badge-check"
+        [size]="40"
+        color="#C9A84C"
+        class="mb-1"
+      ></lucide-icon>
+      <div class="text-gold font-extrabold text-lg">معتمد</div>
+      <div class="text-gray-300 text-xs">رسمياً</div>
+    </div>
+    <div class="flex flex-col items-center justify-center text-center">
+      <lucide-icon
+        name="zap"
+        [size]="40"
+        color="#C9A84C"
+        class="mb-1"
+      ></lucide-icon>
+      <div class="text-gold font-extrabold text-lg">24 ساعة</div>
+      <div class="text-gray-300 text-xs">متوسط وقت الإصدار</div>
+    </div>
+    <div class="flex flex-col items-center justify-center text-center">
+      <lucide-icon
+        name="phone"
+        [size]="40"
+        color="#C9A84C"
+        class="mb-1"
+      ></lucide-icon>
+      <div class="text-gold font-extrabold text-lg">دعم</div>
+      <div class="text-gray-300 text-xs">على مدار الساعة</div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Preview (light section) -->
+<section
+  id="services-preview"
+  class="bg-white py-16"
+>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-dark mb-3">
+        خدماتنا
+      </h2>
+      <div class="w-20 h-1 bg-gold mx-auto rounded-full"></div>
+    </div>
+
+    <div
+      class="bg-white border border-gray-200 rounded-2xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:border-gold hover:shadow-[0_4px_24px_rgba(0,0,0,0.12)] transition-all"
+      data-aos="fade-up"
+    >
+      <div class="flex flex-col gap-6">
+        <!-- Booklet image centered above content -->
+        <div class="flex justify-center" data-aos="fade-down">
+          <div class="relative inline-block">
+            <img
+              src="assets/images/triptyk-booklet.jpg"
+              alt="دفتر التربتك - دفتر الإفراج المؤقت"
+              class="w-44 sm:w-52 rounded-xl shadow-[0_8px_32px_rgba(201,168,76,0.25)] border border-gold/30 hover:shadow-[0_8px_40px_rgba(201,168,76,0.4)] transition-shadow"
+            />
+            <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-gold text-dark text-xs font-bold px-3 py-1 rounded-full shadow-md whitespace-nowrap">
+              وثيقة رسمية
+            </div>
+          </div>
+        </div>
+
+        <!-- Content below image -->
+        <div class="space-y-4 pt-2" data-aos="fade-up">
+          <h3 class="text-xl sm:text-2xl font-extrabold text-dark text-center">
+            دفتر الإفراج المؤقت (التربتك)
+          </h3>
+          <p class="text-[#444444] text-sm leading-relaxed">
+            يتيح للسيارات الأجنبية دخول مصر بشكل قانوني ومؤقت دون الحاجة لدفع جمارك.
+            يُلغي الإجراءات الورقية المعقدة ويوفر الوقت والجهد، مع ضمان كامل لصحة الإجراءات.
+          </p>
+
+          <ul class="space-y-2 text-sm text-[#444444]">
+            <li class="flex items-center gap-2">
+              <lucide-icon name="check" [size]="20" color="#C9A84C" class="shrink-0"></lucide-icon>
+              <span>سريع الإصدار</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <lucide-icon name="check" [size]="20" color="#C9A84C" class="shrink-0"></lucide-icon>
+              <span>معتمد رسمياً من الجهات المختصة</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <lucide-icon name="check" [size]="20" color="#C9A84C" class="shrink-0"></lucide-icon>
+              <span>يغطي جميع أنواع السيارات الأجنبية</span>
+            </li>
+          </ul>
+
+          <div class="pt-2">
+            <a
+              href="https://wa.me/201069822661"
+              target="_blank"
+              rel="noopener"
+              class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-gold text-dark font-bold text-sm shadow-md hover:bg-gold-light transition-colors"
+            >
+              اطلب الآن
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Us (light gray section) -->
+<section class="bg-[#f5f5f5] text-dark py-16">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-dark mb-3">
+        لماذا تختارنا؟
+      </h2>
+      <div class="w-24 h-1 bg-gold mx-auto rounded-full"></div>
+    </div>
+
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-sm"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      <div class="bg-white rounded-2xl p-5 shadow-[0_4px_20px_rgba(0,0,0,0.08)] border border-transparent hover:border-gold transition-all">
+        <lucide-icon
+          name="badge-check"
+          [size]="32"
+          color="#C9A84C"
+          class="mb-3"
+        ></lucide-icon>
+        <h3 class="font-bold text-dark mb-2">معتمد رسمياً</h3>
+        <p class="text-gray-700 text-sm">
+          نعمل بترخيص رسمي من الجهات المختصة لإصدار دفاتر التربتك للسيارات الأجنبية.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-5 shadow-[0_4px_20px_rgba(0,0,0,0.08)] border border-transparent hover:border-gold transition-all">
+        <lucide-icon
+          name="zap"
+          [size]="32"
+          color="#C9A84C"
+          class="mb-3"
+        ></lucide-icon>
+        <h3 class="font-bold text-dark mb-2">سرعة في الإنجاز</h3>
+        <p class="text-gray-700 text-sm">
+          نوفر لك الدفتر في أسرع وقت ممكن مع متابعة مستمرة حتى استلامه.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-5 shadow-[0_4px_20px_rgba(0,0,0,0.08)] border border-transparent hover:border-gold transition-all">
+        <div class="text-3xl mb-3">👨‍💼</div>
+        <h3 class="font-bold text-dark mb-2">فريق محترف</h3>
+        <p class="text-gray-700 text-sm">
+          خبرة طويلة في إجراءات الجمارك والتراخيص والتعامل مع مختلف الحالات.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-5 shadow-[0_4px_20px_rgba(0,0,0,0.08)] border border-transparent hover:border-gold transition-all">
+        <lucide-icon
+          name="shield-check"
+          [size]="32"
+          color="#C9A84C"
+          class="mb-3"
+        ></lucide-icon>
+        <h3 class="font-bold text-dark mb-2">ضمان كامل</h3>
+        <p class="text-gray-700 text-sm">
+          نضمن صحة جميع الأوراق والإجراءات لتدخل بسيارتك مصر بكل اطمئنان.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Preview -->
+<section
+  id="about-preview"
+  class="bg-dark py-16"
+>
+  <div
+    class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center"
+  >
+    <div class="flex justify-center" data-aos="fade-right">
+      <div class="relative flex items-center justify-center">
+        <div
+          class="w-64 h-64 rounded-2xl border-2 border-gold flex items-center justify-center bg-gradient-to-br from-dark-card to-dark"
+          style="box-shadow: 0 0 40px rgba(201,168,76,0.2)"
+        >
+          <img
+            src="assets/images/logo-transparent.png"
+            class="w-48 h-48 object-contain"
+            alt="نادي الصقر الإفريقي"
+          />
+        </div>
+        <!-- Decorative gold rings -->
+        <div class="absolute w-72 h-72 rounded-full border border-gold/20 animate-pulse"></div>
+        <div class="absolute w-80 h-80 rounded-full border border-gold/10"></div>
+      </div>
+    </div>
+
+    <div class="space-y-4" data-aos="fade-left">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-white">
+        من نحن
+      </h2>
+      <p class="text-gray-200 text-sm leading-relaxed">
+        تأسس نادي الصقر الإفريقي للسيارات عام 2018 ليكون الجهة المتخصصة في مصر لإصدار موافقة مصلحة الجمارك لدفاتر الإفراج المؤقت (التربتك)، ونسعى دائماً لتقديم هذه الخدمة بكل التسهيلات الممكنة وبأبسط الإجراءات، مع تقديم الدعم الكامل لعملائنا قبل وأثناء عملية دخول السيارة إلى جمهورية مصر العربية من خلال إحدى المنافذ الجمركية البرية أو البحرية أو الجوية المعتمدة لدى نادي الصقر.
+      </p>
+      <a
+        routerLink="/about"
+        class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-gold text-dark font-bold text-sm shadow-md hover:bg-gold-light transition-colors"
+      >
+        اعرف أكتر عن النادي
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews (light section) -->
+<section class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-dark mb-3">
+        ماذا يقول عملاؤنا
+      </h2>
+      <div class="w-24 h-1 bg-gold mx-auto rounded-full"></div>
+    </div>
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-6"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      <div class="bg-white rounded-2xl border-t-4 border-gold p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+        <div class="flex items-center mb-3">
+          <div class="text-gold text-lg">★★★★★</div>
+        </div>
+        <h3 class="font-bold text-gold mb-1 text-sm">محمد أحمد</h3>
+        <p class="text-[#444444] text-sm leading-relaxed">
+          خدمة ممتازة وسريعة جداً، حصلت على التربتك في وقت قياسي.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl border-t-4 border-gold p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+        <div class="flex items-center mb-3">
+          <div class="text-gold text-lg">★★★★★</div>
+        </div>
+        <h3 class="font-bold text-gold mb-1 text-sm">خالد إبراهيم</h3>
+        <p class="text-[#444444] text-sm leading-relaxed">
+          فريق محترف ومتعاون، أنصح الجميع بالتعامل معهم بدون تردد.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl border-t-4 border-gold p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+        <div class="flex items-center mb-3">
+          <div class="text-gold text-lg">★★★★★</div>
+        </div>
+        <h3 class="font-bold text-gold mb-1 text-sm">سارة محمود</h3>
+        <p class="text-[#444444] text-sm leading-relaxed">
+          إجراءات سهلة وواضحة، شكراً لنادي الصقر الإفريقي على الخدمة المتميزة.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Approved Border Crossings -->
+<section class="bg-dark-card py-16">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10" data-aos="fade-up">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-3">
+        المنافذ المعتمدة لدى نادي الصقر الإفريقي
+      </h2>
+      <div class="w-24 h-1 bg-gold mx-auto rounded-full mb-4"></div>
+      <p class="text-gray-300 text-sm max-w-2xl mx-auto leading-relaxed">
+        نادي الصقر الإفريقي هو الجهة الضامنة للسيارات المُفرج عنها من المنافذ الآتية بموجب دفتر التربتك الذي يصدره النادي
+      </p>
+    </div>
+
+    <!-- Ports grid -->
+    <div
+      class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      <div class="bg-dark border border-gold/40 rounded-2xl p-5 flex items-center gap-3 hover:border-gold transition-colors">
+        <lucide-icon name="plane-landing" [size]="28" color="#C9A84C" class="shrink-0"></lucide-icon>
+        <span class="text-white font-semibold text-sm">مطار القاهرة الدولي</span>
+      </div>
+      <div class="bg-dark border border-gold/40 rounded-2xl p-5 flex items-center gap-3 hover:border-gold transition-colors">
+        <lucide-icon name="map-pin" [size]="28" color="#C9A84C" class="shrink-0"></lucide-icon>
+        <span class="text-white font-semibold text-sm">منفذ سيناء</span>
+      </div>
+      <div class="bg-dark border border-gold/40 rounded-2xl p-5 flex items-center gap-3 hover:border-gold transition-colors">
+        <lucide-icon name="anchor" [size]="28" color="#C9A84C" class="shrink-0"></lucide-icon>
+        <span class="text-white font-semibold text-sm">ميناء سفاجا</span>
+      </div>
+      <div class="bg-dark border border-gold/40 rounded-2xl p-5 flex items-center gap-3 hover:border-gold transition-colors">
+        <lucide-icon name="ship" [size]="28" color="#C9A84C" class="shrink-0"></lucide-icon>
+        <span class="text-white font-semibold text-sm">ميناء الإسكندرية</span>
+      </div>
+      <div class="bg-dark border border-gold/40 rounded-2xl p-5 flex items-center gap-3 hover:border-gold transition-colors">
+        <lucide-icon name="waves" [size]="28" color="#C9A84C" class="shrink-0"></lucide-icon>
+        <span class="text-white font-semibold text-sm">ميناء نويبع</span>
+      </div>
+      <div class="bg-dark border border-gold/40 rounded-2xl p-5 flex items-center gap-3 hover:border-gold transition-colors">
+        <lucide-icon name="truck" [size]="28" color="#C9A84C" class="shrink-0"></lucide-icon>
+        <span class="text-white font-semibold text-sm">منفذ السلام البري</span>
+      </div>
+    </div>
+
+    <!-- Service highlight -->
+    <div
+      class="bg-dark border border-gold/60 rounded-2xl p-6 md:p-8 grid md:grid-cols-2 gap-6 items-center"
+      data-aos="fade-up"
+      data-aos-delay="150"
+    >
+      <div class="space-y-3">
+        <h3 class="text-gold font-extrabold text-lg">
+          إجراءات سريعة وموثوقة عند المنفذ
+        </h3>
+        <p class="text-gray-200 text-sm leading-relaxed">
+          بمجرد وصول سيارتك إلى المنفذ الجمركي، ستجد مندوبنا في استقبالك ليُسهّل عليك عملية الإفراج الجمركي خطوة بخطوة، وذلك بفضل الخبرة الواسعة لفريق نادي الصقر الإفريقي في التعامل مع جميع هذه المنافذ.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-3 text-sm">
+        <div class="flex items-center gap-2 text-gray-200">
+          <lucide-icon name="check-circle" [size]="20" color="#C9A84C" class="shrink-0"></lucide-icon>
+          <span>نادي ضامن معتمد</span>
+        </div>
+        <div class="flex items-center gap-2 text-gray-200">
+          <lucide-icon name="check-circle" [size]="20" color="#C9A84C" class="shrink-0"></lucide-icon>
+          <span>مندوب في الاستقبال</span>
+        </div>
+        <div class="flex items-center gap-2 text-gray-200">
+          <lucide-icon name="check-circle" [size]="20" color="#C9A84C" class="shrink-0"></lucide-icon>
+          <span>دفتر تربتك رسمي</span>
+        </div>
+        <div class="flex items-center gap-2 text-gray-200">
+          <lucide-icon name="check-circle" [size]="20" color="#C9A84C" class="shrink-0"></lucide-icon>
+          <span>تغطية جميع المنافذ</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="bg-gold text-dark py-12">
+  <div
+    class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6"
+    data-aos="fade-up"
+  >
+    <div>
+      <h2 class="text-2xl sm:text-3xl font-extrabold mb-2">
+        جاهز لتسجيل سيارتك؟
+      </h2>
+      <p class="text-sm sm:text-base">
+        تواصل معنا الآن واحصل على دفتر التربتك بكل سهولة وبدون تعقيدات.
+      </p>
+    </div>
+    <div>
+      <a
+        href="https://wa.me/201069822661"
+        target="_blank"
+        rel="noopener"
+        class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-dark text-gold font-bold text-sm shadow-lg hover:bg-black transition-colors"
+      >
+        ابدأ الآن عبر واتساب
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Map Section (Home) -->
+<section class="bg-white py-16">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-4" data-aos="fade-up">
+      <h2 class="text-xl sm:text-2xl font-extrabold text-dark mb-2">
+        موقعنا على الخريطة
+      </h2>
+      <p class="text-xs text-[#444444]">
+        العنوان: 18 شارع قصر النيل، قسم قصر النيل، محافظة القاهرة‬ 4272102
+      </p>
+    </div>
+
+    <div
+      class="rounded-2xl overflow-hidden border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.08)] bg-gradient-to-b from-white via-[#f5f5f5] to-white"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      <iframe
+        title="خريطة توضيحية - 18 شارع قصر النيل، قسم قصر النيل، محافظة القاهرة‬"
+        src="https://www.google.com/maps?q=18%20شارع%20قصر%20النيل%20قسم%20قصر%20النيل%20القاهرة%20Egypt&output=embed"
+        width="100%"
+        height="350"
+        style="border:0;"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>

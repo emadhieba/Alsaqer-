@@ -1,0 +1,86 @@
+<footer class="bg-dark border-t border-gold mt-12">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+      <!-- Logo and name -->
+      <div class="flex items-center flex-row-reverse gap-3">
+        <div class="flex items-center gap-3">
+          <img
+            src="assets/images/logo-transparent.png"
+            class="h-14 w-14 object-contain"
+            alt="نادي الصقر الإفريقي للسيارات"
+            onerror="this.style.display='none'"
+          />
+          <div>
+            <div class="text-gold font-bold text-lg leading-tight">نادي الصقر الإفريقي</div>
+            <div class="text-gold/60 text-sm">The African Falcon Automobile Club</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columns -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm">
+        <div>
+          <h3 class="text-gold font-bold mb-3">روابط سريعة</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li><a routerLink="/" class="hover:text-gold">الرئيسية</a></li>
+            <li><a routerLink="/services" class="hover:text-gold">خدماتنا</a></li>
+            <li><a routerLink="/about" class="hover:text-gold">عن النادي</a></li>
+            <li><a routerLink="/contact" class="hover:text-gold">تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-gold font-bold mb-3">تواصل معنا</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-center gap-2">
+              <span>واتساب:</span>
+              <a
+                href="https://wa.me/201069822661"
+                target="_blank"
+                rel="noopener"
+                class="inline-flex items-center gap-1 text-gold hover:underline"
+              >
+                تواصل عبر واتساب
+              </a>
+            </li>
+            <li class="flex items-center gap-3">
+              <a
+                href="https://www.facebook.com/share/1AXHjEb7gp/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener"
+                class="inline-flex items-center gap-1 hover:text-gold"
+              >
+                <lucide-icon
+                  name="facebook"
+                  [size]="20"
+                  color="#1877F2"
+                  class="shrink-0"
+                ></lucide-icon>
+                <span class="text-sm text-gray-200">صفحتنا على فيسبوك</span>
+              </a>
+            
+            </li>
+            <li>
+              الهاتف:
+              <a href="tel:+201069822661" class="text-gold hover:underline ltr:inline-block">01069822661</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-gold font-bold mb-3">ساعات العمل</h3>
+          <p class="text-gray-300 leading-relaxed">
+            السبت - الخميس<br />
+            9:00 ص - 6:00 م
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-black/70 border-t border-dark-border">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-center text-xs text-gray-400">
+      © 2025 نادي الصقر الإفريقي للسيارات - جميع الحقوق محفوظة
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"$env:USERPROFILE\\\\Downloads\" | Where-Object {$_.Name -match \"\\\\.\\(png|jpg|jpeg|webp\\)$\"} | Sort-Object LastWriteTime -Descending | Select-Object -First 10 | Format-Table Name, LastWriteTime)",
+      "Bash(node -e \"require\\('./routes/upgrades'\\); require\\('./routes/excel'\\); console.log\\('OK'\\);\")",
+      "Bash(start /B node server.js)",
+      "Bash(node -e ' *)",
+      "Bash(node server.js)"
+    ]
+  }
+}

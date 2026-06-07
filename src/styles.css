@@ -1,0 +1,166 @@
+@import 'aos/dist/aos.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Cairo', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background: #0d0d0d;
+  color: #ffffff;
+  direction: rtl;
+  text-align: right;
+  overflow-x: hidden;
+}
+
+.hero-bg {
+  background:
+    radial-gradient(ellipse at top right, rgba(201, 168, 76, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at bottom left, rgba(201, 168, 76, 0.08) 0%, transparent 60%),
+    #0d0d0d;
+}
+
+@keyframes hero-gold-line {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+}
+
+.hero-speed-line {
+  position: absolute;
+  height: 2px;
+  width: 220px;
+  background: linear-gradient(to left, rgba(201, 168, 76, 0), rgba(201, 168, 76, 0.8));
+  animation: hero-gold-line 3s linear infinite;
+}
+
+.hero-speed-line:nth-child(1) {
+  top: 25%;
+  right: 10%;
+  animation-delay: 0s;
+}
+
+.hero-speed-line:nth-child(2) {
+  top: 45%;
+  right: 0%;
+  animation-delay: 1s;
+}
+
+.hero-speed-line:nth-child(3) {
+  top: 65%;
+  right: 20%;
+  animation-delay: 2s;
+}
+
+@keyframes car-journey {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100% - 2rem));
+  }
+}
+
+@keyframes floatCar {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25%       { transform: translateY(-8px) rotate(0.4deg); }
+  75%       { transform: translateY(-5px) rotate(-0.3deg); }
+}
+
+@keyframes spinWheel {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes pulseHeadlight {
+  0%, 100% { opacity: 1;   filter: drop-shadow(0 0 5px #C9A84C); }
+  50%       { opacity: 0.65; filter: drop-shadow(0 0 14px #C9A84C); }
+}
+
+@keyframes pulseTaillight {
+  0%, 100% { opacity: 0.9; }
+  50%       { opacity: 0.45; }
+}
+
+@keyframes svgSpeedLine {
+  0%   { transform: translateX(0);    opacity: 0; }
+  15%  { opacity: 1; }
+  100% { transform: translateX(-90px); opacity: 0; }
+}
+
+/* Wheel spin — transform-box required for SVG correct origin */
+.wheel-spokes-rear,
+.wheel-spokes-front {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: spinWheel 1.6s linear infinite;
+}
+
+.headlight-glow {
+  animation: pulseHeadlight 2.2s ease-in-out infinite;
+}
+
+.taillight-glow {
+  animation: pulseTaillight 1.8s ease-in-out infinite;
+}
+
+/* Staggered speed lines inside SVG */
+.svg-speed-lines line:nth-child(1) { animation: svgSpeedLine 2s linear infinite; animation-delay: 0s; }
+.svg-speed-lines line:nth-child(2) { animation: svgSpeedLine 2s linear infinite; animation-delay: 0.4s; }
+.svg-speed-lines line:nth-child(3) { animation: svgSpeedLine 2s linear infinite; animation-delay: 0.8s; }
+.svg-speed-lines line:nth-child(4) { animation: svgSpeedLine 2s linear infinite; animation-delay: 1.2s; }
+.svg-speed-lines line:nth-child(5) { animation: svgSpeedLine 2s linear infinite; animation-delay: 1.6s; }
+
+@keyframes svgSpeedLineRight {
+  0%   { transform: translateX(0);    opacity: 0; }
+  15%  { opacity: 1; }
+  100% { transform: translateX(90px); opacity: 0; }
+}
+
+.svg-speed-lines-right line:nth-child(1) { animation: svgSpeedLineRight 2s linear infinite; animation-delay: 0s; }
+.svg-speed-lines-right line:nth-child(2) { animation: svgSpeedLineRight 2s linear infinite; animation-delay: 0.4s; }
+.svg-speed-lines-right line:nth-child(3) { animation: svgSpeedLineRight 2s linear infinite; animation-delay: 0.8s; }
+.svg-speed-lines-right line:nth-child(4) { animation: svgSpeedLineRight 2s linear infinite; animation-delay: 1.2s; }
+.svg-speed-lines-right line:nth-child(5) { animation: svgSpeedLineRight 2s linear infinite; animation-delay: 1.6s; }
+
+@keyframes flagFloat {
+  0%, 100% { transform: translateY(0px) scale(1); opacity: 0.65; }
+  50%       { transform: translateY(-14px) scale(1.08); opacity: 1; }
+}
+
+.flag-float {
+  position: absolute;
+  font-size: 2rem;
+  animation: flagFloat 3.5s ease-in-out infinite;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6));
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9A84C;
+  border-radius: 3px;
+}
