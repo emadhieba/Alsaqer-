@@ -1,112 +1,112 @@
-# نادي الصقر الإفريقي للسيارات – موقع تعريفي (Angular 17+)
+# Alsaqer African Automobile Club – Landing Site (Angular 17+)
 
-Landing site for **نادي الصقر الإفريقي للسيارات – The African Falcon Automobile Club**, built with **Angular 17+ (standalone components)** and **TailwindCSS**, RTL and fully Arabic.
+Landing site for **Alsaqer African Automobile Club (نادي الصقر الإفريقي للسيارات)**, built with **Angular 17+ (standalone components)** and **TailwindCSS**, with RTL support and full Arabic content.
 
-All typography uses the **Cairo** Google Font and the primary brand colors are **black & gold**.
+All typography uses the **Cairo** Google Font, and the primary brand colors are **black & gold**.
 
 ---
 
-## 1. تثبيت الحزم – `npm install`
+## 1. Install dependencies – `npm install`
 
-من جذر المشروع:
+From the project root:
 
 ```bash
 npm install
 ```
 
-سيقوم هذا الأمر بتثبيت Angular و TailwindCSS وجميع الحزم المطلوبة.
+This installs Angular, TailwindCSS, and all required packages.
 
 ---
 
-## 2. تشغيل المشروع محلياً – `ng serve`
+## 2. Run locally – `ng serve`
 
-بعد اكتمال التثبيت:
+After installation completes:
 
 ```bash
 npx ng serve
 ```
 
-ثم انتقل إلى:
+Then open:
 
 ```text
 http://localhost:4200/
 ```
 
-الموقع يعمل بوضع RTL افتراضياً، مع شريط تنقل ثابت، وصفحات:
+The site runs in RTL mode by default, with a fixed navigation bar and the following pages:
 
-- `/` الرئيسية
-- `/services` خدماتنا
-- `/about` عن النادي
-- `/contact` تواصل معنا
+- `/` Home
+- `/services` Our Services
+- `/about` About the Club
+- `/contact` Contact Us
 
 ---
 
-## 3. تغيير رقم واتساب
+## 3. Change the WhatsApp number
 
-رقم واتساب الحالي هو:
-
-```text
-201069822661
-```
-
-لتغييره:
-
-1. افتح المشروع في VS Code أو Cursor.
-2. نفّذ بحثاً عن النص:
+The current WhatsApp number is:
 
 ```text
 201069822661
 ```
 
-3. عدّل الرقم في جميع النتائج (يوجد في أزرار واتساب في `navbar`, `home`, `services`, `contact`, و زر واتساب العائم).
+To change it:
 
-يمكنك أيضاً تعديل رابط واتساب مباشرة (إن أردت):
+1. Open the project in VS Code or Cursor.
+2. Search for:
+
+```text
+201069822661
+```
+
+3. Update the number in all results (found in WhatsApp buttons in `navbar`, `home`, `services`, `contact`, and the floating WhatsApp button).
+
+You can also update the WhatsApp link directly if needed:
 
 ```text
 https://wa.me/201069822661
 ```
 
-إلى رقمك الجديد بنفس الصيغة الدولية (بدون +).
+Replace it with your new number in the same international format (without the `+` sign).
 
 ---
 
-## 4. استبدال الشعار (Logo)
+## 4. Replace the logo
 
-مسار ملفات الشعار:
+Logo file paths:
 
 ```text
 src/assets/images/logo.png
 src/assets/images/logo-dark.png
 ```
 
-لاستبدال الشعار:
+To replace the logo:
 
-1. جهّز ملفي صورة (أو نسخة واحدة تستخدمها لكليهما) بصيغة `png`.
-2. سمِّ الملفات بنفس الأسماء:
+1. Prepare your image file(s) in `png` format (one file for both, or separate versions).
+2. Name the files:
    - `logo.png`
    - `logo-dark.png`
-3. انسخها إلى المجلد:
+3. Copy them to:
 
 ```text
 src/assets/images/
 ```
 
-يُستخدم:
+Usage:
 
-- `logo.png` في الهيرو وبعض أقسام التعريف.
-- `logo-dark.png` في الفوتر على الخلفية الداكنة.
+- `logo.png` — used in the hero section and some intro areas.
+- `logo-dark.png` — used in the footer on the dark background.
 
 ---
 
-## 5. إضافة خريطة Google Maps الحقيقية
+## 5. Add a real Google Maps embed
 
-في صفحة **تواصل معنا**، يوجد قسم خريطة مع `iframe` جاهز في:
+On the **Contact Us** page, there is a map section with a ready-made `iframe` in:
 
 ```text
 src/app/app/pages/contact/contact/contact.html
 ```
 
-داخل القسم الأخير سترى تعليقاً في الكود:
+In the last section you will find a comment in the code:
 
 ```html
 <!-- Replace src with your actual Google Maps embed link -->
@@ -116,42 +116,42 @@ src/app/app/pages/contact/contact/contact.html
 ></iframe>
 ```
 
-### الخطوات:
+### Steps:
 
-1. افتح Google Maps وحدد موقعك الفعلي.
-2. من القائمة اختر "مشاركة" ثم "تضمين خريطة" (Embed Map).
-3. انسخ رابط الـ `src` من كود التضمين الذي تعطيك إياه Google.
-4. الصق هذا الرابط مكان قيمة `src` الحالية في الـ `iframe`.
+1. Open Google Maps and locate your actual address.
+2. Click **Share**, then **Embed a map**.
+3. Copy the `src` URL from the embed code Google provides.
+4. Paste that URL as the `src` value in the `iframe`.
 
 ---
 
-## 6. بناء المشروع للإنتاج – `ng build`
+## 6. Production build – `ng build`
 
-لبناء نسخة إنتاجية (Production build):
+To create a production build:
 
 ```bash
 npx ng build
 ```
 
-الملفات الجاهزة للنشر ستظهر في:
+The deployable files will be output to:
 
 ```text
 dist/
 ```
 
-يمكنك نشر محتويات مجلد التطبيق الناتج (عادةً `dist/alsaqer-club`) على أي خادم ويب (Nginx, Apache، أو خدمة استضافة ملفات ثابتة).
+You can deploy the contents of the generated app folder (usually `dist/alsaqer-club`) to any web server (Nginx, Apache, or a static hosting service).
 
 ---
 
-### ملاحظات تقنية سريعة
+### Quick technical notes
 
-- تم تفعيل **TailwindCSS** مع الألوان المخصصة:
+- **TailwindCSS** is configured with custom colors:
   - `gold.DEFAULT = #C9A84C`
   - `gold.light = #e8c96e`
   - `gold.dark = #a8893c`
   - `dark.DEFAULT = #0d0d0d`
   - `dark.card = #1a1a1a`
   - `dark.border = #2a2a2a`
-- الخط الافتراضي هو **Cairo** عبر `src/styles.css`.
-- زر واتساب العائم يمكن تعديله في:
+- The default font is **Cairo**, loaded via `src/styles.css`.
+- The floating WhatsApp button can be edited in:
   - `src/app/app/components/whatsapp-button/whatsapp-button/whatsapp-button.html`
