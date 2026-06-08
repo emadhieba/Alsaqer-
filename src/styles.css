@@ -27,6 +27,11 @@ body {
   100% { opacity: 1; transform: scale(1); }
 }
 
+@keyframes drawerSlideIn {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }
