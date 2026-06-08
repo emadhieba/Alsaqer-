@@ -82,26 +82,27 @@
     <div class="flex items-center justify-center relative" data-aos="fade-left">
 
       <!-- Floating country flags (real images) -->
-      <img src="https://flagcdn.com/w40/sa.png" alt="SA" class="flag-float absolute w-9 h-auto rounded shadow-lg" style="top:4%;left:5%;animation-delay:0s;animation-duration:3.4s"/>
-      <img src="https://flagcdn.com/w40/ae.png" alt="AE" class="flag-float absolute w-9 h-auto rounded shadow-lg" style="top:12%;right:3%;animation-delay:0.9s;animation-duration:3.8s"/>
-      <img src="https://flagcdn.com/w40/kw.png" alt="KW" class="flag-float absolute w-9 h-auto rounded shadow-lg" style="top:52%;left:0%;animation-delay:1.7s;animation-duration:4.1s"/>
-      <img src="https://flagcdn.com/w40/ly.png" alt="LY" class="flag-float absolute w-9 h-auto rounded shadow-lg" style="top:75%;left:8%;animation-delay:2.5s;animation-duration:3.6s"/>
-      <img src="https://flagcdn.com/w40/jo.png" alt="JO" class="flag-float absolute w-9 h-auto rounded shadow-lg" style="top:76%;right:6%;animation-delay:0.5s;animation-duration:3.9s"/>
-      <img src="https://flagcdn.com/w40/tn.png" alt="TN" class="flag-float absolute w-9 h-auto rounded shadow-lg" style="top:30%;right:0%;animation-delay:2.1s;animation-duration:4.3s"/>
-      <img src="https://flagcdn.com/w40/ma.png" alt="MA" class="flag-float absolute w-9 h-auto rounded shadow-lg" style="top:60%;right:12%;animation-delay:1.3s;animation-duration:3.5s"/>
-      <img src="https://flagcdn.com/w40/eg.png" alt="EG" class="flag-float absolute w-9 h-auto rounded shadow-lg" style="top:40%;left:14%;animation-delay:3s;animation-duration:3.7s"/>
+      <img src="https://flagcdn.com/w40/sa.png" alt="SA" class="flag-float absolute w-10 h-auto rounded shadow-lg" style="top:-5%;left:-8%;animation-delay:0s;animation-duration:3.4s;z-index:2"/>
+      <img src="https://flagcdn.com/w40/ae.png" alt="AE" class="flag-float absolute w-10 h-auto rounded shadow-lg" style="top:5%;right:-10%;animation-delay:0.9s;animation-duration:3.8s;z-index:2"/>
+      <img src="https://flagcdn.com/w40/kw.png" alt="KW" class="flag-float absolute w-10 h-auto rounded shadow-lg" style="top:45%;left:-12%;animation-delay:1.7s;animation-duration:4.1s;z-index:2"/>
+      <img src="https://flagcdn.com/w40/ly.png" alt="LY" class="flag-float absolute w-10 h-auto rounded shadow-lg" style="bottom:-8%;left:-5%;animation-delay:2.5s;animation-duration:3.6s;z-index:2"/>
+      <img src="https://flagcdn.com/w40/jo.png" alt="JO" class="flag-float absolute w-10 h-auto rounded shadow-lg" style="bottom:-10%;right:-8%;animation-delay:0.5s;animation-duration:3.9s;z-index:2"/>
+      <img src="https://flagcdn.com/w40/tn.png" alt="TN" class="flag-float absolute w-10 h-auto rounded shadow-lg" style="top:22%;right:-12%;animation-delay:2.1s;animation-duration:4.3s;z-index:2"/>
+      <img src="https://flagcdn.com/w40/ma.png" alt="MA" class="flag-float absolute w-10 h-auto rounded shadow-lg" style="bottom:5%;right:-5%;animation-delay:1.3s;animation-duration:3.5s;z-index:2"/>
+      <img src="https://flagcdn.com/w40/eg.png" alt="EG" class="flag-float absolute w-10 h-auto rounded shadow-lg" style="top:35%;left:-10%;animation-delay:3s;animation-duration:3.7s;z-index:2"/>
 
       <!-- Premium car image -->
       <div
         class="relative w-full max-w-2xl"
-        style="background: radial-gradient(ellipse, rgba(201,168,76,0.12) 0%, transparent 65%);"
+        style="background: radial-gradient(ellipse, rgba(201,168,76,0.15) 0%, transparent 65%);"
       >
         <img
           src="assets/images/car-hero.png"
           alt="سيارة فاخرة - نادي الصقر الإفريقي"
-          class="w-full h-auto object-contain"
-          style="animation: floatCar 5s ease-in-out infinite; filter: drop-shadow(0 10px 44px rgba(201,168,76,0.3));"
+          class="w-full drop-shadow-2xl"
+          style="animation: floatCar 5s ease-in-out infinite; filter: drop-shadow(0 16px 48px rgba(201,168,76,0.35));"
         />
+        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-3/4 h-4 bg-gold/20 blur-2xl rounded-full"></div>
       </div>
 
     </div>
@@ -109,50 +110,38 @@
 </section>
 
 <!-- Stats Bar -->
-<section class="bg-dark-card border-t border-gold/40">
+<section class="bg-gradient-to-b from-white to-[#f8f6f0] py-10">
   <div
-    class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm"
+    class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-5"
     data-aos="fade-up"
   >
-    <div class="flex flex-col items-center justify-center text-center">
-      <lucide-icon
-        name="trophy"
-        [size]="40"
-        color="#C9A84C"
-        class="mb-1"
-      ></lucide-icon>
-      <div class="text-gold font-extrabold text-lg">+500</div>
-      <div class="text-gray-300 text-xs">عميل راضٍ</div>
+    <div class="bg-white rounded-2xl shadow-[0_4px_24px_rgba(201,168,76,0.12)] border border-gold/20 px-5 py-6 flex flex-col items-center text-center hover:shadow-[0_8px_32px_rgba(201,168,76,0.22)] hover:-translate-y-1 transition-all duration-300">
+      <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-3">
+        <lucide-icon name="trophy" [size]="28" color="#C9A84C"></lucide-icon>
+      </div>
+      <div class="text-gold font-extrabold text-2xl leading-none mb-1">+500</div>
+      <div class="text-gray-500 text-xs mt-1">عميل راضٍ</div>
     </div>
-    <div class="flex flex-col items-center justify-center text-center">
-      <lucide-icon
-        name="badge-check"
-        [size]="40"
-        color="#C9A84C"
-        class="mb-1"
-      ></lucide-icon>
-      <div class="text-gold font-extrabold text-lg">معتمد</div>
-      <div class="text-gray-300 text-xs">رسمياً من الجمارك</div>
+    <div class="bg-white rounded-2xl shadow-[0_4px_24px_rgba(201,168,76,0.12)] border border-gold/20 px-5 py-6 flex flex-col items-center text-center hover:shadow-[0_8px_32px_rgba(201,168,76,0.22)] hover:-translate-y-1 transition-all duration-300">
+      <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-3">
+        <lucide-icon name="badge-check" [size]="28" color="#C9A84C"></lucide-icon>
+      </div>
+      <div class="text-gold font-extrabold text-2xl leading-none mb-1">معتمد</div>
+      <div class="text-gray-500 text-xs mt-1">رسمياً من الجمارك</div>
     </div>
-    <div class="flex flex-col items-center justify-center text-center">
-      <lucide-icon
-        name="zap"
-        [size]="40"
-        color="#C9A84C"
-        class="mb-1"
-      ></lucide-icon>
-      <div class="text-gold font-extrabold text-lg">24 ساعة</div>
-      <div class="text-gray-300 text-xs">متوسط وقت الإصدار</div>
+    <div class="bg-white rounded-2xl shadow-[0_4px_24px_rgba(201,168,76,0.12)] border border-gold/20 px-5 py-6 flex flex-col items-center text-center hover:shadow-[0_8px_32px_rgba(201,168,76,0.22)] hover:-translate-y-1 transition-all duration-300">
+      <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-3">
+        <lucide-icon name="zap" [size]="28" color="#C9A84C"></lucide-icon>
+      </div>
+      <div class="text-gold font-extrabold text-2xl leading-none mb-1">24 ساعة</div>
+      <div class="text-gray-500 text-xs mt-1">متوسط وقت الإصدار</div>
     </div>
-    <div class="flex flex-col items-center justify-center text-center">
-      <lucide-icon
-        name="phone"
-        [size]="40"
-        color="#C9A84C"
-        class="mb-1"
-      ></lucide-icon>
-      <div class="text-gold font-extrabold text-lg">دعم</div>
-      <div class="text-gray-300 text-xs">على مدار الساعة</div>
+    <div class="bg-white rounded-2xl shadow-[0_4px_24px_rgba(201,168,76,0.12)] border border-gold/20 px-5 py-6 flex flex-col items-center text-center hover:shadow-[0_8px_32px_rgba(201,168,76,0.22)] hover:-translate-y-1 transition-all duration-300">
+      <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mb-3">
+        <lucide-icon name="phone" [size]="28" color="#C9A84C"></lucide-icon>
+      </div>
+      <div class="text-gold font-extrabold text-2xl leading-none mb-1">دعم</div>
+      <div class="text-gray-500 text-xs mt-1">على مدار الساعة</div>
     </div>
   </div>
 </section>
@@ -579,70 +568,68 @@
 </section>
 
 <!-- أماكن إصدار دفاترنا -->
-<section class="bg-dark py-16">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="mb-8" data-aos="fade-up">
+<section class="relative bg-dark py-20 overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-gold/5 rounded-full blur-3xl"></div>
+  </div>
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12" data-aos="fade-up">
       <h2 class="text-xl sm:text-2xl font-extrabold text-gold mb-2">أماكن إصدار دفاترنا</h2>
-      <p class="text-sm text-gray-300">يمكنك الحصول على دفتر التربتك من خلال مقرنا الرئيسي أو فروعنا أو مناديبنا في المنافذ الجمركية</p>
+      <div class="w-16 h-1 bg-gold mx-auto rounded-full mb-4"></div>
+      <p class="text-sm text-gray-400 max-w-xl mx-auto">يمكنك الحصول على دفتر التربتك من خلال مقرنا الرئيسي أو فروعنا أو مناديبنا في المنافذ الجمركية</p>
     </div>
 
     <div class="grid md:grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="100">
-      <div class="bg-dark-card border border-gold/40 rounded-2xl p-6 shadow-md">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center">
-            <lucide-icon name="building-2" [size]="22" color="#C9A84C"></lucide-icon>
-          </div>
-          <h3 class="text-gold font-bold text-sm">المقر الرئيسي</h3>
+
+      <div class="group relative bg-gradient-to-b from-dark-card to-dark border border-gold/30 rounded-3xl p-7 hover:border-gold/70 hover:shadow-[0_0_32px_rgba(201,168,76,0.15)] transition-all duration-300">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-dark border-2 border-gold flex items-center justify-center shadow-[0_0_20px_rgba(201,168,76,0.3)]">
+          <lucide-icon name="building-2" [size]="28" color="#C9A84C"></lucide-icon>
         </div>
-        <p class="text-white font-semibold text-sm mb-1">القاهرة</p>
-        <p class="text-gray-300 text-xs leading-relaxed">
-          8أ شارع قصر النيل، الدور السادس<br />
-          من ميدان طلعت حرب<br />
-          أمام بنك الإمارات دبي الوطني
-        </p>
+        <div class="mt-5 text-center">
+          <h3 class="text-gold font-extrabold text-base mb-1">المقر الرئيسي</h3>
+          <p class="text-white font-bold text-sm mb-3">القاهرة</p>
+          <div class="w-8 h-px bg-gold/40 mx-auto mb-3"></div>
+          <p class="text-gray-400 text-xs leading-relaxed">
+            8أ شارع قصر النيل، الدور السادس<br />
+            من ميدان طلعت حرب<br />
+            أمام بنك الإمارات دبي الوطني
+          </p>
+        </div>
       </div>
 
-      <div class="bg-dark-card border border-gold/40 rounded-2xl p-6 shadow-md">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center">
-            <lucide-icon name="map-pin" [size]="22" color="#C9A84C"></lucide-icon>
-          </div>
-          <h3 class="text-gold font-bold text-sm">فرع ليبيا الشقيقة</h3>
+      <div class="group relative bg-gradient-to-b from-dark-card to-dark border border-gold/30 rounded-3xl p-7 hover:border-gold/70 hover:shadow-[0_0_32px_rgba(201,168,76,0.15)] transition-all duration-300">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-dark border-2 border-gold flex items-center justify-center shadow-[0_0_20px_rgba(201,168,76,0.3)]">
+          <lucide-icon name="map-pin" [size]="28" color="#C9A84C"></lucide-icon>
         </div>
-        <p class="text-gray-300 text-xs leading-relaxed">
-          <span class="text-white font-semibold block mb-1">مدينة طبرق</span>
-          <span class="text-white font-semibold block mt-2 mb-1">مدينة مساعد</span>
-        </p>
+        <div class="mt-5 text-center">
+          <h3 class="text-gold font-extrabold text-base mb-1">فرع ليبيا الشقيقة</h3>
+          <div class="w-8 h-px bg-gold/40 mx-auto mb-3"></div>
+          <p class="text-gray-400 text-xs leading-relaxed">مدينة طبرق — مدينة مساعد</p>
+          <div class="w-8 h-px bg-gold/40 mx-auto my-3"></div>
+          <div class="bg-dark rounded-xl px-4 py-2 border border-gold/10">
+            <p class="text-white text-sm font-semibold">جمهورية ليبيا</p>
+          </div>
+        </div>
       </div>
 
-      <div class="bg-dark-card border border-gold/40 rounded-2xl p-6 shadow-md">
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center">
-            <lucide-icon name="users" [size]="22" color="#C9A84C"></lucide-icon>
-          </div>
-          <h3 class="text-gold font-bold text-sm">مناديبنا في المنافذ الجمركية</h3>
+      <div class="group relative bg-gradient-to-b from-dark-card to-dark border border-gold/30 rounded-3xl p-7 hover:border-gold/70 hover:shadow-[0_0_32px_rgba(201,168,76,0.15)] transition-all duration-300">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-dark border-2 border-gold flex items-center justify-center shadow-[0_0_20px_rgba(201,168,76,0.3)]">
+          <lucide-icon name="users" [size]="28" color="#C9A84C"></lucide-icon>
         </div>
-        <p class="text-gray-300 text-xs mb-3">يتواجد مناديبنا في جميع المنافذ المعتمدة لاستقبالكم وتسهيل إجراءاتكم:</p>
-        <ul class="space-y-1 text-xs text-gray-200">
-          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold inline-block"></span>منفذ القاهرة (جوي / بري)</li>
-          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold inline-block"></span>ميناء السويس</li>
-          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold inline-block"></span>ميناء سفاجا</li>
-          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold inline-block"></span>ميناء الإسكندرية</li>
-          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold inline-block"></span>ميناء نويبع</li>
-          <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold inline-block"></span>منفذ السلوم البري</li>
-        </ul>
+        <div class="mt-5 text-center">
+          <h3 class="text-gold font-extrabold text-base mb-1">مناديبنا في المنافذ الجمركية</h3>
+          <div class="w-8 h-px bg-gold/40 mx-auto mb-3"></div>
+          <p class="text-gray-400 text-xs mb-3">يتواجد مناديبنا في جميع المنافذ المعتمدة لاستقبالكم وتسهيل إجراءاتكم:</p>
+          <ul class="space-y-2 text-xs">
+            <li class="flex items-center justify-center gap-2 text-gray-300"><span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>منفذ القاهرة (جوي / بري)</li>
+            <li class="flex items-center justify-center gap-2 text-gray-300"><span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>ميناء السويس</li>
+            <li class="flex items-center justify-center gap-2 text-gray-300"><span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>ميناء سفاجا</li>
+            <li class="flex items-center justify-center gap-2 text-gray-300"><span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>ميناء الإسكندرية</li>
+            <li class="flex items-center justify-center gap-2 text-gray-300"><span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>ميناء نويبع</li>
+            <li class="flex items-center justify-center gap-2 text-gray-300"><span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>منفذ السلوم البري</li>
+          </ul>
+        </div>
       </div>
-    </div>
-
-    <div class="text-center mt-8" data-aos="fade-up">
-      <a
-        href="https://wa.me/201069822661"
-        target="_blank"
-        rel="noopener"
-        class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-gold text-dark font-bold text-sm shadow-lg hover:bg-gold-light transition-colors"
-      >
-        تواصل معنا الآن
-      </a>
     </div>
   </div>
 </section>
