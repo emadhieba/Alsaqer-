@@ -1,8 +1,8 @@
-<footer class="bg-dark border-t border-gold mt-12">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+<footer class="bg-dark border-t border-gold/30 mt-12">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-10">
       <!-- Logo and name -->
-      <div class="flex items-center flex-row-reverse gap-3">
+      <div class="flex items-center flex-row-reverse gap-3 md:max-w-xs">
         <div class="flex items-center gap-3">
           <img
             src="assets/images/logo-transparent.png"
@@ -12,75 +12,62 @@
           />
           <div>
             <div class="text-gold font-bold text-lg leading-tight">نادي الصقر الإفريقي</div>
-            <div class="text-gold/60 text-sm">The African Falcon Automobile Club</div>
+            <div class="text-gold/50 text-xs">The African Falcon Automobile Club</div>
           </div>
         </div>
       </div>
 
       <!-- Columns -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm">
         <div>
-          <h3 class="text-gold font-bold mb-3">روابط سريعة</h3>
-          <ul class="space-y-2 text-gray-300">
-            <li><a routerLink="/" class="hover:text-gold">الرئيسية</a></li>
-            <li><a routerLink="/services" class="hover:text-gold">خدماتنا</a></li>
-            <li><a routerLink="/about" class="hover:text-gold">عن النادي</a></li>
-            <li><a routerLink="/contact" class="hover:text-gold">تواصل معنا</a></li>
+          <h3 class="text-gold font-bold text-xs tracking-widest mb-4">روابط سريعة</h3>
+          <ul class="space-y-3 text-gray-400">
+            <li><a routerLink="/" class="hover:text-gold transition-colors">الرئيسية</a></li>
+            <li><a routerLink="/services" class="hover:text-gold transition-colors">خدماتنا</a></li>
+            <li><a routerLink="/about" class="hover:text-gold transition-colors">عن النادي</a></li>
+            <li><a routerLink="/contact" class="hover:text-gold transition-colors">تواصل معنا</a></li>
           </ul>
         </div>
 
         <div>
-          <h3 class="text-gold font-bold mb-3">تواصل معنا</h3>
-          <ul class="space-y-2 text-gray-300">
+          <h3 class="text-gold font-bold text-xs tracking-widest mb-4">تواصل معنا</h3>
+          <ul class="space-y-3 text-gray-400">
             <li class="flex items-center gap-2">
-              <span>واتساب:</span>
-              <a
-                href="https://wa.me/201069822661"
-                target="_blank"
-                rel="noopener"
-                class="inline-flex items-center gap-1 text-gold hover:underline"
-              >
+              <lucide-icon name="phone" [size]="14" color="#C9A84C" class="shrink-0"></lucide-icon>
+              <a href="tel:+201069822661" class="text-gray-200 hover:text-gold transition-colors ltr:inline-block">01069822661</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <lucide-icon name="zap" [size]="14" color="#C9A84C" class="shrink-0"></lucide-icon>
+              <a href="https://wa.me/201069822661" target="_blank" rel="noopener" class="text-gray-200 hover:text-gold transition-colors">
                 تواصل عبر واتساب
               </a>
             </li>
-            <li class="flex items-center gap-3">
-              <a
-                href="https://www.facebook.com/share/1AXHjEb7gp/?mibextid=wwXIfr"
-                target="_blank"
-                rel="noopener"
-                class="inline-flex items-center gap-1 hover:text-gold"
-              >
-                <lucide-icon
-                  name="facebook"
-                  [size]="20"
-                  color="#1877F2"
-                  class="shrink-0"
-                ></lucide-icon>
-                <span class="text-sm text-gray-200">صفحتنا على فيسبوك</span>
+            <li class="flex items-center gap-2">
+              <a href="https://www.facebook.com/share/1AXHjEb7gp/?mibextid=wwXIfr" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-gray-200 hover:text-gold transition-colors">
+                <lucide-icon name="facebook" [size]="16" color="#1877F2" class="shrink-0"></lucide-icon>
+                <span>صفحتنا على فيسبوك</span>
               </a>
-            
-            </li>
-            <li>
-              الهاتف:
-              <a href="tel:+201069822661" class="text-gold hover:underline ltr:inline-block">01069822661</a>
             </li>
           </ul>
         </div>
 
         <div>
-          <h3 class="text-gold font-bold mb-3">ساعات العمل</h3>
-          <p class="text-gray-300 leading-relaxed">
-            السبت - الخميس<br />
-            9:00 ص - 6:00 م
-          </p>
+          <h3 class="text-gold font-bold text-xs tracking-widest mb-4">ساعات العمل</h3>
+          <div class="bg-dark-card/60 border border-dark-border rounded-xl p-4">
+            <p class="text-gray-200 leading-relaxed text-sm">
+              السبت - الخميس<br />
+              9:00 ص - 6:00 م
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="bg-black/70 border-t border-dark-border">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-center text-xs text-gray-400">
-      © 2025 نادي الصقر الإفريقي للسيارات - جميع الحقوق محفوظة
+  <div class="bg-black/50 border-t border-dark-border/60">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
+      <span>&copy; 2025 نادي الصقر الإفريقي للسيارات - جميع الحقوق محفوظة</span>
+      <span class="text-gray-600">Powered by African Falcon Club</span>
     </div>
   </div>
 </footer>

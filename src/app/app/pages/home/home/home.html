@@ -1,110 +1,94 @@
 <!-- Hero Section -->
-<section
-  class="min-h-[90vh] flex items-center hero-bg relative overflow-hidden"
->
-  <div class="absolute inset-0 opacity-20 pointer-events-none">
-    <div
-      class="w-[500px] h-[500px] bg-gradient-to-tr from-gold/40 via-gold-light/20 to-transparent rounded-full blur-3xl absolute -top-40 -left-40"
-    ></div>
-    <div
-      class="w-[400px] h-[400px] border border-gold/20 rounded-[3rem] absolute top-32 right-8 rotate-6"
-    ></div>
-    <!-- Animated speed lines -->
-    <div class="hero-speed-line"></div>
-    <div class="hero-speed-line"></div>
-    <div class="hero-speed-line"></div>
-    <!-- Road / highway overlay at bottom -->
-    <svg
-      class="absolute inset-x-0 bottom-0 h-32 w-full opacity-50"
-      viewBox="0 0 1440 320"
-      preserveAspectRatio="none"
-    >
-      <path
-        fill="#111111"
-        d="M0,288L160,261.3C320,235,640,181,960,176C1280,171,1600,213,1760,234.7L1920,256L1920,320L1760,320C1600,320,1280,320,960,320C640,320,320,320,160,320L0,320Z"
-      />
-      <path
-        fill="none"
-        stroke="#2a2a2a"
-        stroke-width="4"
-        d="M-40,260 Q400,230 840,240 T1720,250"
-        stroke-linecap="round"
-        stroke-dasharray="20 16"
-      />
-      <path
-        fill="none"
-        stroke="#C9A84C"
-        stroke-width="3"
-        d="M-40,252 Q400,222 840,232 T1720,242"
-        stroke-linecap="round"
-        stroke-dasharray="40 24"
-      />
-    </svg>
+<section class="relative min-h-screen flex items-center overflow-hidden bg-dark">
+
+  <!-- Background Image with zoom-in animation -->
+  <div class="absolute inset-0">
+    <img
+      src="assets/images/hero-luxury.jpg"
+      alt="سيارات فاخرة - نادي الصقر الإفريقي"
+      class="w-full h-full object-cover object-center scale-100"
+      style="filter: saturate(1.08) brightness(0.92);"
+    />
+    <!-- Dark gradient overlay - softer on top to show sky, darker on bottom -->
+    <div class="absolute inset-0 bg-gradient-to-t from-dark/95 via-dark/50 to-dark/10"></div>
+    <!-- Left side darker for text readability -->
+    <div class="absolute inset-0 bg-gradient-to-r from-dark/60 via-transparent to-dark/30"></div>
+    <!-- Warm gold tint from lower right -->
+    <div class="absolute inset-0 bg-gradient-to-br from-gold/10 via-transparent to-transparent"></div>
+    <!-- Very subtle vignette -->
+    <div class="absolute inset-0 shadow-[inset_0_0_200px_rgba(0,0,0,0.4)]"></div>
   </div>
 
-  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid md:grid-cols-2 gap-10">
-    <div class="space-y-6" data-aos="fade-up">
+  <!-- Decorative gold corner brackets (top-right) -->
+  <div class="absolute top-12 right-8 hidden lg:flex flex-col items-end gap-1 z-10">
+    <div class="w-16 h-px bg-gradient-to-l from-gold/80 to-transparent"></div>
+    <div class="w-10 h-px bg-gradient-to-l from-gold/40 to-transparent"></div>
+    <div class="flex items-start gap-1 mt-1">
+      <div class="w-px h-16 bg-gradient-to-b from-gold/80 to-transparent"></div>
+      <div class="w-px h-10 bg-gradient-to-b from-gold/40 to-transparent"></div>
+    </div>
+  </div>
+
+  <!-- Decorative gold corner brackets (bottom-left) -->
+  <div class="absolute bottom-32 left-8 hidden lg:flex flex-col items-start gap-1 z-10">
+    <div class="flex items-end gap-1 mb-1">
+      <div class="w-px h-16 bg-gradient-to-t from-gold/80 to-transparent"></div>
+      <div class="w-px h-10 bg-gradient-to-t from-gold/40 to-transparent"></div>
+    </div>
+    <div class="w-16 h-px bg-gradient-to-r from-gold/80 to-transparent"></div>
+    <div class="w-10 h-px bg-gradient-to-r from-gold/40 to-transparent"></div>
+  </div>
+
+  <!-- Gold diagonal accent line -->
+  <div class="absolute top-0 left-0 w-48 h-px bg-gold/20 rotate-45 -translate-x-10 translate-y-20 hidden lg:block pointer-events-none"></div>
+
+  <!-- Bottom fade to next section -->
+  <div class="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-dark to-transparent pointer-events-none z-10"></div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden md:flex flex-col items-center gap-2 animate-bounce">
+    <span class="text-gold/60 text-[10px] font-semibold tracking-widest">SCROLL</span>
+    <div class="w-[1px] h-8 bg-gradient-to-b from-gold/60 to-transparent"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-24 z-10">
+    <div data-aos="fade-up" data-aos-duration="800">
+
       <div
-        class="inline-flex items-center border border-gold/60 text-gold px-4 py-1 rounded-full text-xs font-semibold bg-black/40 backdrop-blur-sm"
+        class="inline-flex items-center border border-gold/50 text-gold px-5 py-2 rounded-full text-xs sm:text-sm font-semibold bg-black/40 backdrop-blur-md shadow-[0_0_20px_rgba(201,168,76,0.15)]"
+        data-aos="fade-up"
+        data-aos-delay="100"
       >
         الجهة المعتمدة لإصدار التربتك في مصر
       </div>
 
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-relaxed text-white">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-snug text-white mt-8 max-w-4xl" data-aos="fade-up" data-aos-delay="200">
         دخول سيارتك مصر..
-        <span class="text-gold block mt-2">بكل سهولة وأمان</span>
+        <span class="bg-gradient-to-l from-gold to-gold-light bg-clip-text text-transparent block mt-3">بكل سهولة وأمان</span>
       </h1>
 
-      <p class="text-gray-200 text-sm sm:text-base leading-relaxed max-w-xl">
+      <p class="text-gray-200 text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl mt-6" data-aos="fade-up" data-aos-delay="300">
         نادي الصقر الإفريقي يوفر لك دفتر الإفراج المؤقت (التربتك) بإجراءات سريعة وموثوقة،
         لتتمكن من إدخال سيارتك الأجنبية إلى مصر دون تعقيدات أو تأخير.
       </p>
 
-      <div class="flex flex-wrap gap-3 mt-4">
+      <div class="flex flex-wrap gap-4 mt-8" data-aos="fade-up" data-aos-delay="400">
         <a
           href="https://wa.me/201069822661"
           target="_blank"
           rel="noopener"
-          class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-gold text-dark font-bold text-sm shadow-lg hover:bg-gold-light hover:-translate-y-0.5 transition-all"
+          class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-gradient-to-l from-gold to-gold-light text-dark font-bold text-sm sm:text-base shadow-lg shadow-gold/25 hover:shadow-gold/40 hover:-translate-y-1 transition-all duration-300"
         >
           اطلب دفتر التربتك الآن
         </a>
         <a
           href="#about-preview"
-          class="inline-flex items-center justify-center px-6 py-3 rounded-full border border-gold text-gold font-semibold text-sm hover:bg-gold/10 transition-colors"
+          class="inline-flex items-center justify-center px-8 py-4 rounded-full border border-gold/60 text-gold font-semibold text-sm sm:text-base hover:bg-gold/10 hover:border-gold transition-all duration-300"
         >
           اعرف أكتر
         </a>
       </div>
-    </div>
-
-    <!-- Car + Floating Flags -->
-    <div class="flex items-center justify-center relative" data-aos="fade-left">
-
-      <!-- Floating country flags (real images) -->
-      <img src="https://flagcdn.com/w40/sa.png" alt="SA" class="flag-float absolute w-10 h-auto rounded shadow-lg" style="top:-5%;left:-8%;animation-delay:0s;animation-duration:3.4s;z-index:2"/>
-      <img src="https://flagcdn.com/w40/ae.png" alt="AE" class="flag-float absolute w-10 h-auto rounded shadow-lg" style="top:5%;right:-10%;animation-delay:0.9s;animation-duration:3.8s;z-index:2"/>
-      <img src="https://flagcdn.com/w40/kw.png" alt="KW" class="flag-float absolute w-10 h-auto rounded shadow-lg" style="top:45%;left:-12%;animation-delay:1.7s;animation-duration:4.1s;z-index:2"/>
-      <img src="https://flagcdn.com/w40/ly.png" alt="LY" class="flag-float absolute w-10 h-auto rounded shadow-lg" style="bottom:-8%;left:-5%;animation-delay:2.5s;animation-duration:3.6s;z-index:2"/>
-      <img src="https://flagcdn.com/w40/jo.png" alt="JO" class="flag-float absolute w-10 h-auto rounded shadow-lg" style="bottom:-10%;right:-8%;animation-delay:0.5s;animation-duration:3.9s;z-index:2"/>
-      <img src="https://flagcdn.com/w40/tn.png" alt="TN" class="flag-float absolute w-10 h-auto rounded shadow-lg" style="top:22%;right:-12%;animation-delay:2.1s;animation-duration:4.3s;z-index:2"/>
-      <img src="https://flagcdn.com/w40/ma.png" alt="MA" class="flag-float absolute w-10 h-auto rounded shadow-lg" style="bottom:5%;right:-5%;animation-delay:1.3s;animation-duration:3.5s;z-index:2"/>
-      <img src="https://flagcdn.com/w40/eg.png" alt="EG" class="flag-float absolute w-10 h-auto rounded shadow-lg" style="top:35%;left:-10%;animation-delay:3s;animation-duration:3.7s;z-index:2"/>
-
-      <!-- Premium car image -->
-      <div
-        class="relative w-full max-w-2xl"
-        style="background: radial-gradient(ellipse, rgba(201,168,76,0.15) 0%, transparent 65%);"
-      >
-        <img
-          src="assets/images/car-hero.png"
-          alt="سيارة فاخرة - نادي الصقر الإفريقي"
-          class="w-full drop-shadow-2xl"
-          style="animation: floatCar 5s ease-in-out infinite; filter: drop-shadow(0 16px 48px rgba(201,168,76,0.35));"
-        />
-        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-3/4 h-4 bg-gold/20 blur-2xl rounded-full"></div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -149,7 +133,7 @@
 <!-- About Preview -->
 <section
   id="about-preview"
-  class="bg-dark py-16"
+  class="bg-dark py-16 overflow-hidden"
 >
   <div
     class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center"
@@ -157,8 +141,7 @@
     <div class="flex justify-center" data-aos="fade-right">
       <div class="relative flex items-center justify-center">
         <div
-          class="w-64 h-64 rounded-2xl border-2 border-gold flex items-center justify-center bg-gradient-to-br from-dark-card to-dark"
-          style="box-shadow: 0 0 40px rgba(201,168,76,0.2)"
+          class="w-64 h-64 rounded-2xl border-2 border-gold/60 flex items-center justify-center bg-gradient-to-br from-dark-card to-dark shadow-[0_0_50px_rgba(201,168,76,0.15)]"
         >
           <img
             src="assets/images/logo-transparent.png"
@@ -169,19 +152,24 @@
         <!-- Decorative gold rings -->
         <div class="absolute w-72 h-72 rounded-full border border-gold/20 animate-pulse"></div>
         <div class="absolute w-80 h-80 rounded-full border border-gold/10"></div>
+        <div class="absolute w-96 h-96 rounded-full border border-gold/5"></div>
       </div>
     </div>
 
     <div class="space-y-4" data-aos="fade-left">
+      <div class="inline-flex items-center gap-2 text-gold text-xs font-semibold mb-1">
+        <span class="w-6 h-px bg-gold/60"></span>
+        <span>نبذة عن النادي</span>
+      </div>
       <h2 class="text-2xl sm:text-3xl font-extrabold text-white">
         من نحن
       </h2>
       <p class="text-gray-200 text-sm leading-relaxed">
-        تأسس نادي الصقر الإفريقي للسيارات عام 2018 ليكون الجهة المتخصصة في مصر لإصدار موافقة مصلحة الجمارك لدفاتر الإفراج المؤقت (التربتك)، ونسعى دائماً لتقديم هذه الخدمة بكل التسهيلات الممكنة وبأبسط الإجراءات، مع تقديم الدعم الكامل لعملائنا قبل وأثناء عملية دخول السيارة إلى جمهورية مصر العربية من خلال إحدى المنافذ الجمركية البرية أو البحرية أو الجوية المعتمدة لدى نادي الصقر.
+        تأسس نادي الصقر الإفريقي للسيارات عام 2018 ليكون الجهة المتخصصة في مصر لإصدار دفاتر (التربتك) الافراج المؤقت عن السيارات بموافقة مصلحة الجمارك ، ونسعى دائماً لتقديم هذه الخدمة بكل التسهيلات الممكنة وبأبسط الإجراءات، مع تقديم الدعم الكامل لعملائنا قبل وأثناء عملية دخول السيارة إلى جمهورية مصر العربية من خلال إحدى المنافذ الجمركية البرية أو البحرية أو الجوية المعتمدة لدى نادي الصقر.
       </p>
       <a
         routerLink="/about"
-        class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-gold text-dark font-bold text-sm shadow-md hover:bg-gold-light transition-colors"
+        class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-gradient-to-l from-gold to-gold-light text-dark font-bold text-sm shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all"
       >
         اعرف أكتر عن النادي
       </a>
@@ -209,12 +197,16 @@
       <div class="flex flex-col gap-6">
         <div class="flex justify-center" data-aos="fade-down">
           <div class="relative inline-block">
-            <img
-              src="assets/images/triptyk-booklet.jpg"
-              alt="دفتر التربتك - دفتر الإفراج المؤقت"
-              class="w-44 sm:w-52 rounded-xl shadow-[0_8px_32px_rgba(201,168,76,0.25)] border border-gold/30 hover:shadow-[0_8px_40px_rgba(201,168,76,0.4)] transition-shadow"
-            />
-            <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-gold text-dark text-xs font-bold px-3 py-1 rounded-full shadow-md whitespace-nowrap">
+            <div class="rounded-xl overflow-hidden shadow-[0_8px_32px_rgba(201,168,76,0.25)] border border-gold/30 hover:shadow-[0_8px_40px_rgba(201,168,76,0.4)] transition-shadow" style="background: #E5F0D5;">
+              <img
+                src="assets/images/triptyk-booklet.jpg"
+                alt="دفتر التربتك - دفتر الإفراج المؤقت"
+                class="w-44 sm:w-52 relative z-10"
+                style="mix-blend-mode: multiply;"
+              />
+              <div class="absolute inset-0 z-20" style="background: #D6E4C0; opacity: 0.55; mix-blend-mode: multiply; pointer-events: none;"></div>
+            </div>
+            <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gold text-dark text-xs font-bold px-3 py-1 rounded-full shadow-md whitespace-nowrap">
               وثيقة رسمية
             </div>
           </div>
@@ -225,7 +217,7 @@
             دفتر الإفراج المؤقت (التربتك)
           </h3>
           <p class="text-[#444444] text-sm leading-relaxed">
-            يُصدر نادي الصقر الإفريقي للسيارات دفتر الإفراج المؤقت (التربتك) في أيٍّ من مكاتبه المتقدمة بالمنافذ المعتمدة لديه، أو من <strong>المقر الرئيسي بالقاهرة</strong>، أو من <strong>الفرع الرئيسي بجمهورية ليبيا في مساعد</strong> — بحيث يُتيح للسيارات الأجنبية دخول مصر بشكل قانوني ومؤقت دون الحاجة لدفع جمارك، وبصلاحية سير بخدمة مرور مؤقتة لمدة أقصاها <strong>6 أشهر</strong> دون أي إجراءات ورقية معقدة.
+            يُصدر نادي الصقر الإفريقي للسيارات دفتر الإفراج المؤقت (التربتك) في أيٍّ من مكاتبه المتقدمة بالمنافذ المعتمدة لديه، أو من <strong>المقر الرئيسي بالقاهرة</strong>، أو من <strong>الفرع الرئيسي بجمهورية ليبيا في مساعد</strong> — بحيث يُتيح للسيارات الأجنبية دخول مصر بشكل قانوني ومؤقت دون الحاجة لدفع  رسوم جمركية، وبرخصة مرور مؤقتة لمدة أقصاها <strong>6 أشهر</strong> دون أي إجراءات ورقية معقدة.
           </p>
 
           <ul class="space-y-2 text-sm text-[#444444]">
@@ -439,7 +431,12 @@
       </div>
 
       <div class="bg-white rounded-2xl p-5 shadow-[0_4px_20px_rgba(0,0,0,0.08)] border border-transparent hover:border-gold transition-all">
-        <div class="text-3xl mb-3">👨‍💼</div>
+        <lucide-icon
+          name="users"
+          [size]="32"
+          color="#C9A84C"
+          class="mb-3"
+        ></lucide-icon>
         <h3 class="font-bold text-dark mb-2">فريق محترف</h3>
         <p class="text-gray-700 text-sm">
           خبرة طويلة في إجراءات الجمارك والتراخيص والتعامل مع مختلف الحالات.
@@ -477,50 +474,72 @@
       data-aos="fade-up"
       data-aos-delay="100"
     >
-      <div class="bg-white rounded-2xl border-t-4 border-gold p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+      <div class="bg-white rounded-2xl border border-gray-100 p-6 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_32px_rgba(201,168,76,0.15)] hover:border-gold/30 hover:-translate-y-1 transition-all duration-300">
         <div class="flex items-center mb-3">
-          <div class="text-gold text-lg">★★★★★</div>
+          <div class="text-gold text-lg tracking-wider">★★★★★</div>
         </div>
-        <h3 class="font-bold text-gold mb-1 text-sm">محمد أحمد</h3>
-        <p class="text-[#444444] text-sm leading-relaxed">
-          خدمة ممتازة وسريعة جداً، حصلت على التربتك في وقت قياسي.
+        <p class="text-[#444444] text-sm leading-relaxed mb-3">
+          "خدمة ممتازة وسريعة جداً، حصلت على التربتك في وقت قياسي."
         </p>
+        <div class="flex items-center gap-3 pt-3 border-t border-gray-100">
+          <div class="w-9 h-9 rounded-full bg-gold/20 flex items-center justify-center text-gold font-bold text-xs">م</div>
+          <div>
+            <div class="font-bold text-dark text-sm">محمد أحمد</div>
+            <div class="text-[10px] text-gray-400">عميل موثوق</div>
+          </div>
+        </div>
       </div>
 
-      <div class="bg-white rounded-2xl border-t-4 border-gold p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+      <div class="bg-white rounded-2xl border border-gray-100 p-6 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_32px_rgba(201,168,76,0.15)] hover:border-gold/30 hover:-translate-y-1 transition-all duration-300">
         <div class="flex items-center mb-3">
-          <div class="text-gold text-lg">★★★★★</div>
+          <div class="text-gold text-lg tracking-wider">★★★★★</div>
         </div>
-        <h3 class="font-bold text-gold mb-1 text-sm">خالد إبراهيم</h3>
-        <p class="text-[#444444] text-sm leading-relaxed">
-          فريق محترف ومتعاون، أنصح الجميع بالتعامل معهم بدون تردد.
+        <p class="text-[#444444] text-sm leading-relaxed mb-3">
+          "فريق محترف ومتعاون، أنصح الجميع بالتعامل معهم بدون تردد."
         </p>
+        <div class="flex items-center gap-3 pt-3 border-t border-gray-100">
+          <div class="w-9 h-9 rounded-full bg-gold/20 flex items-center justify-center text-gold font-bold text-xs">خ</div>
+          <div>
+            <div class="font-bold text-dark text-sm">خالد إبراهيم</div>
+            <div class="text-[10px] text-gray-400">عميل موثوق</div>
+          </div>
+        </div>
       </div>
 
-      <div class="bg-white rounded-2xl border-t-4 border-gold p-6 shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+      <div class="bg-white rounded-2xl border border-gray-100 p-6 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_32px_rgba(201,168,76,0.15)] hover:border-gold/30 hover:-translate-y-1 transition-all duration-300">
         <div class="flex items-center mb-3">
-          <div class="text-gold text-lg">★★★★★</div>
+          <div class="text-gold text-lg tracking-wider">★★★★★</div>
         </div>
-        <h3 class="font-bold text-gold mb-1 text-sm">سارة محمود</h3>
-        <p class="text-[#444444] text-sm leading-relaxed">
-          إجراءات سهلة وواضحة، شكراً لنادي الصقر الإفريقي على الخدمة المتميزة.
+        <p class="text-[#444444] text-sm leading-relaxed mb-3">
+          "إجراءات سهلة وواضحة، شكراً لنادي الصقر الإفريقي على الخدمة المتميزة."
         </p>
+        <div class="flex items-center gap-3 pt-3 border-t border-gray-100">
+          <div class="w-9 h-9 rounded-full bg-gold/20 flex items-center justify-center text-gold font-bold text-xs">س</div>
+          <div>
+            <div class="font-bold text-dark text-sm">سارة محمود</div>
+            <div class="text-[10px] text-gray-400">عميل موثوق</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Final CTA -->
-<section class="bg-gold text-dark py-12">
+<section class="relative bg-gradient-to-l from-gold to-gold-light text-dark py-14 overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+    <div class="absolute bottom-0 left-0 w-48 h-48 bg-dark/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+  </div>
   <div
-    class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6"
+    class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6"
     data-aos="fade-up"
   >
     <div>
       <h2 class="text-2xl sm:text-3xl font-extrabold mb-2">
         جاهز لتسجيل سيارتك؟
       </h2>
-      <p class="text-sm sm:text-base">
+      <p class="text-sm sm:text-base opacity-80">
         تواصل معنا الآن واحصل على دفتر التربتك بكل سهولة وبدون تعقيدات.
       </p>
     </div>
@@ -529,7 +548,7 @@
         href="https://wa.me/201069822661"
         target="_blank"
         rel="noopener"
-        class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-dark text-gold font-bold text-sm shadow-lg hover:bg-black transition-colors"
+        class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-dark text-gold font-bold text-sm shadow-lg hover:bg-black hover:-translate-y-0.5 transition-all"
       >
         ابدأ الآن عبر واتساب
       </a>
