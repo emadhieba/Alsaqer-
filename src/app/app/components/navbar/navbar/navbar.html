@@ -92,69 +92,67 @@
         </button>
       </div>
     </div>
-
-    <!-- Mobile Drawer Overlay -->
-    <div *ngIf="isMenuOpen" class="fixed inset-0 z-50 md:hidden">
-      <!-- Backdrop -->
-      <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" (click)="toggleMenu()"></div>
-      <!-- Drawer panel -->
-      <div class="absolute top-0 left-0 bottom-0 w-72 max-w-[85vw] bg-dark-card border-l border-gold/20 shadow-2xl overflow-y-auto" style="animation: drawerSlideIn 0.3s ease-out;">
-        <div class="flex items-center justify-between p-5 border-b border-gold/10">
-          <div class="flex items-center gap-3">
-            <img src="assets/images/logo-transparent.png" alt="شعار" class="h-10 w-auto" loading="eager" />
-            <span class="text-gold font-bold text-sm">القائمة</span>
-          </div>
-          <button type="button" (click)="toggleMenu()" class="w-9 h-9 rounded-full bg-dark-border/60 flex items-center justify-center text-gray-200 hover:text-gold transition-colors">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-            </svg>
-          </button>
-        </div>
-        <ul class="py-3 text-sm font-semibold text-gray-200">
-          <li>
-            <a routerLink="/" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="text-gold bg-gold/5"
-              class="flex items-center gap-4 px-5 py-3.5 hover:bg-dark-border/40 hover:text-gold border-b border-dark-border/30 transition-colors"
-              (click)="toggleMenu()">
-              <span class="w-2 h-2 rounded-full bg-gold/40"></span>
-              الرئيسية
-            </a>
-          </li>
-          <li>
-            <a routerLink="/services" routerLinkActive="text-gold bg-gold/5"
-              class="flex items-center gap-4 px-5 py-3.5 hover:bg-dark-border/40 hover:text-gold border-b border-dark-border/30 transition-colors"
-              (click)="toggleMenu()">
-              <span class="w-2 h-2 rounded-full bg-gold/40"></span>
-              خدماتنا
-            </a>
-          </li>
-          <li>
-            <a routerLink="/about" routerLinkActive="text-gold bg-gold/5"
-              class="flex items-center gap-4 px-5 py-3.5 hover:bg-dark-border/40 hover:text-gold border-b border-dark-border/30 transition-colors"
-              (click)="toggleMenu()">
-              <span class="w-2 h-2 rounded-full bg-gold/40"></span>
-              عن النادي
-            </a>
-          </li>
-          <li>
-            <a routerLink="/contact" routerLinkActive="text-gold bg-gold/5"
-              class="flex items-center gap-4 px-5 py-3.5 hover:bg-dark-border/40 hover:text-gold border-b border-dark-border/30 transition-colors"
-              (click)="toggleMenu()">
-              <span class="w-2 h-2 rounded-full bg-gold/40"></span>
-              تواصل معنا
-            </a>
-          </li>
-        </ul>
-        <div class="px-5 pt-4 pb-6 border-t border-gold/10 mt-2">
-          <a href="https://wa.me/201069822661" target="_blank" rel="noopener"
-            class="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-full bg-gradient-to-l from-gold to-gold-light text-dark font-bold text-sm shadow-md hover:shadow-lg transition-all"
-            (click)="toggleMenu()">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 32 32">
-              <path d="M16.004 3.001c-6.06 0-10.995 4.935-10.995 10.996 0 1.936.507 3.82 1.47 5.486L4 28l8.7-2.403a11.02 11.02 0 0 0 3.304.5h.001c6.06 0 10.995-4.935 10.995-10.996 0-2.94-1.146-5.702-3.227-7.781A10.93 10.93 0 0 0 16.004 3z"/>
-            </svg>
-            اطلب الآن عبر واتساب
-          </a>
-        </div>
-      </div>
-    </div>
   </nav>
 </header>
+
+<!-- Mobile Drawer Overlay (outside header) -->
+<div *ngIf="isMenuOpen" class="fixed inset-0 z-50 md:hidden">
+  <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" (click)="toggleMenu()"></div>
+  <div class="absolute top-0 right-0 bottom-0 w-72 max-w-[85vw] bg-dark-card border-l border-gold/20 shadow-2xl overflow-y-auto" style="animation: drawerSlideIn 0.3s ease-out;">
+    <div class="flex items-center justify-between p-5 border-b border-gold/10">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo-transparent.png" alt="شعار" class="h-10 w-auto" loading="eager" />
+        <span class="text-gold font-bold text-sm">القائمة</span>
+      </div>
+      <button type="button" (click)="toggleMenu()" class="w-9 h-9 rounded-full bg-dark-border/60 flex items-center justify-center text-gray-200 hover:text-gold transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <ul class="py-3 text-sm font-semibold text-gray-200">
+      <li>
+        <a routerLink="/" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="text-gold bg-gold/5"
+          class="flex items-center gap-4 px-5 py-3.5 hover:bg-dark-border/40 hover:text-gold border-b border-dark-border/30 transition-colors"
+          (click)="toggleMenu()">
+          <span class="w-2 h-2 rounded-full bg-gold/40"></span>
+          الرئيسية
+        </a>
+      </li>
+      <li>
+        <a routerLink="/services" routerLinkActive="text-gold bg-gold/5"
+          class="flex items-center gap-4 px-5 py-3.5 hover:bg-dark-border/40 hover:text-gold border-b border-dark-border/30 transition-colors"
+          (click)="toggleMenu()">
+          <span class="w-2 h-2 rounded-full bg-gold/40"></span>
+          خدماتنا
+        </a>
+      </li>
+      <li>
+        <a routerLink="/about" routerLinkActive="text-gold bg-gold/5"
+          class="flex items-center gap-4 px-5 py-3.5 hover:bg-dark-border/40 hover:text-gold border-b border-dark-border/30 transition-colors"
+          (click)="toggleMenu()">
+          <span class="w-2 h-2 rounded-full bg-gold/40"></span>
+          عن النادي
+        </a>
+      </li>
+      <li>
+        <a routerLink="/contact" routerLinkActive="text-gold bg-gold/5"
+          class="flex items-center gap-4 px-5 py-3.5 hover:bg-dark-border/40 hover:text-gold border-b border-dark-border/30 transition-colors"
+          (click)="toggleMenu()">
+          <span class="w-2 h-2 rounded-full bg-gold/40"></span>
+          تواصل معنا
+        </a>
+      </li>
+    </ul>
+    <div class="px-5 pt-4 pb-6 border-t border-gold/10 mt-2">
+      <a href="https://wa.me/201069822661" target="_blank" rel="noopener"
+        class="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-full bg-gradient-to-l from-gold to-gold-light text-dark font-bold text-sm shadow-md hover:shadow-lg transition-all"
+        (click)="toggleMenu()">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 32 32">
+          <path d="M16.004 3.001c-6.06 0-10.995 4.935-10.995 10.996 0 1.936.507 3.82 1.47 5.486L4 28l8.7-2.403a11.02 11.02 0 0 0 3.304.5h.001c6.06 0 10.995-4.935 10.995-10.996 0-2.94-1.146-5.702-3.227-7.781A10.93 10.93 0 0 0 16.004 3z"/>
+        </svg>
+        اطلب الآن عبر واتساب
+      </a>
+    </div>
+  </div>
+</div>

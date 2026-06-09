@@ -134,9 +134,26 @@
         </div>
         <div class="text-gold font-extrabold text-2xl leading-none mb-1">دعم</div>
         <div class="text-gray-500 text-xs mt-1">على مدار الساعة</div>
-      </div>
+    </div>
   </div>
 </section>
+
+<!-- Gold Wave Divider before Footer -->
+<div class="relative h-20 bg-dark overflow-hidden -mb-1">
+  <svg class="absolute top-0 w-full h-20" viewBox="0 0 1440 80" preserveAspectRatio="none" fill="none">
+    <defs>
+      <linearGradient id="goldWave" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#C9A84C" stop-opacity="0" />
+        <stop offset="20%" stop-color="#C9A84C" stop-opacity="0.15" />
+        <stop offset="50%" stop-color="#C9A84C" stop-opacity="0.25" />
+        <stop offset="80%" stop-color="#C9A84C" stop-opacity="0.15" />
+        <stop offset="100%" stop-color="#C9A84C" stop-opacity="0" />
+      </linearGradient>
+    </defs>
+    <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="url(#goldWave)" />
+    <path d="M0,48 C240,88 480,8 720,48 C960,88 1200,8 1440,48 L1440,80 L0,80 Z" fill="url(#goldWave)" opacity="0.5" />
+  </svg>
+</div>
 
 <!-- Wave Divider (white → dark) -->
 <div class="relative h-16 bg-white overflow-hidden">
@@ -668,3 +685,12 @@
     </div>
   </div>
 </section>
+
+<!-- Decorative Gold Divider -->
+<div class="bg-dark py-10">
+  <div class="flex items-center justify-center gap-3 px-4 max-w-full">
+    <span class="flex-1 h-px bg-gradient-to-l from-gold/40 to-transparent"></span>
+    <img src="assets/images/logo-transparent.png" alt="صقر" class="w-6 h-6 object-contain opacity-60" loading="lazy" />
+    <span class="flex-1 h-px bg-gradient-to-r from-gold/40 to-transparent"></span>
+  </div>
+</div>
